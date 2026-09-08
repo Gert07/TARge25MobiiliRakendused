@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Example_app.ValgusfoorPage"
+             Title="ValgusfoorPage">
+    <VerticalStackLayout Spacing="30" HorizontalOptions="Center">
+        <Label 
+            Text="Vali valgus"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label
+            x:Name="ValgusfoorLabel"
+            Text="Valgusfoor ei tööta"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button
+            x:Name="RedBtn"
+            Text="Punane"
+            WidthRequest="80"
+            HeightRequest="80"
+            CornerRadius="40"
+            Clicked="RedBtn_Clicked"
+            HorizontalOptions="Fill"
+            BackgroundColor="Grey"
+            TextColor="Black" />
+        <Button
+            x:Name="YellowBtn"
+            Text="Kollane"
+            WidthRequest="80"
+            HeightRequest="80"
+            CornerRadius="40"
+            Clicked="YellowBtn_Clicked"
+            HorizontalOptions="Fill"
+            BackgroundColor="Grey"
+            TextColor="Black" />
+        <Button
+            x:Name="GreenBtn"
+            Text="Roheline"
+            WidthRequest="80"
+            HeightRequest="80"
+            CornerRadius="40"
+            Clicked="GreenBtn_Clicked"
+            HorizontalOptions="Fill"
+            BackgroundColor="Grey"
+            TextColor="Black" />
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            <Button  
+                x:Name="StartBtn"
+                Text="Sisse"
+                Clicked="StartButton_Clicked"
+                BackgroundColor="LightGray"/>
+            <Button
+                x:Name="ResetBtn"
+                Text="Välja"
+                Clicked="ResetButton_Clicked"
+                BackgroundColor="LightGray"/>
+        </HorizontalStackLayout>
+        <Button
+            x:Name="NightBtn"
+            Text="Öörežiim"
+            Clicked="NightBtn_Clicked"
+            BackgroundColor="LightGray"/>
+    </VerticalStackLayout>
+</ContentPage>

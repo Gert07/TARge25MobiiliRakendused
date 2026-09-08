@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Example_app.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Example_app"
+    Title="Example_app">
+
+    <Shell.TitleView>
+        <Label
+            Text="Näidis"
+            FontFamily="open_sans_regular"
+            FontSize="Title"
+            TextColor="Blue"
+            VerticalTextAlignment="Center"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            Padding="25,0,0,0"
+            HeightRequest="50"
+            />
+    </Shell.TitleView>
+    <ShellContent
+        Title="Avaleht"
+        ContentTemplate="{DataTemplate local:StartPage}"
+        Route="StartPage" />
+
+</Shell>

@@ -3,8 +3,8 @@ namespace Example_app;
 public partial class StartPage : ContentPage
 {
 	VerticalStackLayout vst;
-	public List<ContentPage> lehed = new List<ContentPage>() { new TextPage(), new FigurePage(), new ValgusfoorPage() };
-	public List<string> Lehenimed = new List<string>() { "Testid", "Kujundus", "Valgusfoor" };
+	public List<ContentPage> lehed = new List<ContentPage>() { new TextPage(), new FigurePage(), new ValgusfoorPage(), new DateTimePage(), new StepperSliderPage() };
+	public List<string> Lehenimed = new List<string>() { "Testid", "Kujundus", "Valgusfoor", "Aeg", "Stepper" };
 	public StartPage()
 	{
 		vst = new VerticalStackLayout { Padding = 20, Spacing = 20 };

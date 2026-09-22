@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Example_app.TicTacToe.RulesPage"
+             Title="RulesPage">
+    <ScrollView Padding="20">
+        <VerticalStackLayout Spacing="15">
+            <Label Text="Mängureeglid" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Label Text="1. Mäng toimub ruudustikul (vaikimisi 3x3)." FontSize="16" />
+            <Label Text="2. Mängijad kordamööda asetavad ruudustikule oma sümboli (X või O)." FontSize="16" />
+            <Label Text="3. Võidab see, kes saab esimesena täis terve rea, tulpa või diagonaali." FontSize="16" />
+            <Label Text="4. Kui kõik ruudud on täidetud ja keegi pole võitnud, lõppeb mäng viigiga." FontSize="16" />
+            <Button Text="Tagasi mängima" Clicked="OnBackClicked" Margin="0,20,0,0" BackgroundColor="#512BD4" TextColor="White" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

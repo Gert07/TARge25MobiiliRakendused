@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Example_app.TicTacToe.StatsPage"
+             Title="StatsPage">
+    <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+        <Label Text="Mängude Statistika" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        <Frame BorderColor="Gray" Padding="20" CornerRadius="10">
+            <VerticalStackLayout Spacing="10">
+                <Label x:Name="XWinsLabel" Text="X Võidud: 0" FontSize="18" TextColor="Red" />
+                <Label x:Name="OWinsLabel" Text="O Võidud: 0" FontSize="18" TextColor="Blue" />
+                <Label x:Name="DrawsLabel" Text="Viigid: 0" FontSize="18" TextColor="Gray" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Puhasta statistika" Clicked="OnResetStatsClicked" BackgroundColor="#D83B01" TextColor="White" />
+        <Button Text="Tagasi" Clicked="OnBackClicked" BackgroundColor="#512BD4" TextColor="White" />
+    </VerticalStackLayout>
+</ContentPage>

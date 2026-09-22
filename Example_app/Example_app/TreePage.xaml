@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Example_app.TreePage"
+             Title="TreePage">
+
+    <Grid RowDefinitions="*, Auto">
+
+        <!-- 1. Sky / Animated Elements -->
+        <AbsoluteLayout x:Name="SkyLayout"
+                BackgroundColor="LightBlue"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Grid.Row="0">
+
+            <!-- Päike -->
+            <Ellipse x:Name="Sun"
+         Fill="Gold"
+         IsVisible="True"
+         AbsoluteLayout.LayoutBounds="0.5,0.06,50,50"
+         AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+            <!-- Kuu -->
+            <Ellipse x:Name="Moon"
+             Fill="LightGray"
+             IsVisible="False"
+             AbsoluteLayout.LayoutBounds="0.5,0.1,45,45"
+             AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+            <!-- KOGU PUU -->
+            <AbsoluteLayout x:Name="TreeContainer"
+                    AbsoluteLayout.LayoutBounds="0.5,0.55,0.6,0.8"
+                    AbsoluteLayout.LayoutFlags="All">
+
+                <!-- Tüvi -->
+                <BoxView x:Name="Stem"
+                 Color="Brown"
+                 AbsoluteLayout.LayoutBounds="0.5,0.75,0.12,0.55"
+                 AbsoluteLayout.LayoutFlags="All" />
+
+                <!-- Võra -->
+                <Border x:Name="Leaves"
+        BackgroundColor="ForestGreen"
+        StrokeThickness="0"
+        StrokeShape="RoundRectangle 120"
+        AbsoluteLayout.LayoutBounds="0.5,0.3,0.8,0.55"
+        AbsoluteLayout.LayoutFlags="All" />
+
+                <!-- Õun 1 -->
+                <Ellipse x:Name="Apple1"
+         Fill="Red"
+         WidthRequest="28"
+         HeightRequest="28"
+         AbsoluteLayout.LayoutBounds="0.38,0.35,28,28"
+         AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAppleTapped" />
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+
+                <Ellipse x:Name="Apple2"
+         Fill="Red"
+         WidthRequest="28"
+         HeightRequest="28"
+         AbsoluteLayout.LayoutBounds="0.62,0.28,28,28"
+         AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <Ellipse.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAppleTapped" />
+                    </Ellipse.GestureRecognizers>
+                </Ellipse>
+
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+
+        <!-- 2. Control Panel -->
+        <ScrollView Grid.Row="1"
+            BackgroundColor="#F0F0F0"
+            MaximumHeightRequest="350">
+
+            <VerticalStackLayout Padding="15"
+                         Spacing="10">
+
+                <Label x:Name="InfoLabel"
+               Text="Vali tegevus ja vajuta 'Käivita'"
+               FontSize="16"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="DarkSlateGray" />
+
+                <!-- TEGEVUS -->
+                <Grid ColumnDefinitions="*, Auto"
+              ColumnSpacing="10">
+
+                    <Picker x:Name="ActionPicker"
+                    Title="Vali tegevus..."
+                    Grid.Column="0">
+
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Kasva</x:String>
+                                <x:String>Õitse</x:String>
+                                <x:String>Värise</x:String>
+                                <x:String>Langeta</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+
+                    </Picker>
+
+                    <Button x:Name="RunButton"
+                    Text="Käivita"
+                    Clicked="OnRunButtonClicked"
+                    Grid.Column="1" />
+
+                </Grid>
+
+                <BoxView HeightRequest="1"
+                 Color="Gray"
+                 Margin="0,5" />
+
+                <!-- AASTAAEG -->
+                <Grid ColumnDefinitions="*, Auto"
+              ColumnSpacing="10">
+
+                    <Label Text="Aastaaeg:"
+                   VerticalOptions="Center" />
+
+                    <Picker x:Name="SeasonPicker"
+                    Grid.Column="1"
+                    WidthRequest="150"
+                    SelectedIndex="1"
+                    SelectedIndexChanged="OnSeasonChanged">
+
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Kevad</x:String>
+                                <x:String>Suvi</x:String>
+                                <x:String>Sügis</x:String>
+                                <x:String>Talv</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+
+                    </Picker>
+
+                </Grid>
+
+                <!-- KIIRUS -->
+                <HorizontalStackLayout Spacing="10">
+
+                    <Label x:Name="SpeedLabel"
+                   Text="Kiirus: 1000 ms"
+                   VerticalOptions="Center"
+                   WidthRequest="150" />
+
+                    <Stepper x:Name="SpeedStepper"
+                     Minimum="500"
+                     Maximum="2000"
+                     Increment="100"
+                     Value="1000"
+                     ValueChanged="OnSpeedStepperValueChanged" />
+
+                </HorizontalStackLayout>
+
+                <!-- KUUPÄEV JA KELL -->
+                <Grid ColumnDefinitions="*, *"
+              ColumnSpacing="10">
+
+                    <VerticalStackLayout Grid.Column="0">
+
+                        <Label Text="Kuupäev:"
+                       FontSize="11" />
+
+                        <DatePicker x:Name="SeasonDatePicker"
+                            DateSelected="OnSeasonDateSelected" />
+
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="1">
+
+                        <Label Text="Kellaaeg:"
+                       FontSize="11" />
+
+                        <TimePicker x:Name="TimeOfDayPicker"
+                            PropertyChanged="OnTimeOfDayChanged" />
+
+                    </VerticalStackLayout>
+
+                </Grid>
+
+                <!-- LÄHTESTAMINE -->
+                <Button x:Name="ResetButton"
+                Text="Lähtesta puu"
+                Clicked="OnResetButtonClicked"
+                BackgroundColor="Gray"
+                TextColor="White" />
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Example_app.TicTacToe.TripsuPage"
+             Title="TripsuPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Navigatsiooni ja Seadete Nupud -->
+            <Grid ColumnDefinitions="*, *, *" ColumnSpacing="10">
+                <Button Grid.Column="0" Text="Reeglid" Clicked="OnRulesClicked" BackgroundColor="#512BD4" TextColor="White" />
+                <Button Grid.Column="1" Text="Statistika" Clicked="OnStatsClicked" BackgroundColor="#512BD4" TextColor="White" />
+                <Button Grid.Column="2" Text="Teema" Clicked="OnToggleThemeClicked" BackgroundColor="#2B0B98" TextColor="White" />
+            </Grid>
+
+            <!-- Mängurežiimi Seaded -->
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Label Text="Vastane:" VerticalOptions="Center" />
+                <Picker x:Name="ModePicker" SelectedIndexChanged="OnModeChanged">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>2 Mängijat</x:String>
+                            <x:String>Mäng Botiga</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Label Text="Suurus:" VerticalOptions="Center" Margin="10,0,0,0" />
+                <Picker x:Name="SizePicker" SelectedIndexChanged="OnSizeChanged">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>3x3</x:String>
+                            <x:String>4x4</x:String>
+                            <x:String>5x5</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </HorizontalStackLayout>
+
+            <!-- Mängu staatus ja info -->
+            <Label x:Name="StatusLabel" 
+                   Text="Mängija X kord" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <!-- Nupud "Uus mäng" ja "Kes alustab?" -->
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="10">
+                <Button Grid.Column="0" Text="Uus mäng" Clicked="OnNewGameClicked" BackgroundColor="#107C41" TextColor="White" />
+                <Button Grid.Column="1" Text="Kes alustab?" Clicked="OnWhoStartsClicked" BackgroundColor="#0078D4" TextColor="White" />
+            </Grid>
+
+            <!-- Dünaamiline Mänguväli (Grid) -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="5" HeightRequest="360" WidthRequest="360" HorizontalOptions="Center">
+                <Grid x:Name="BoardGrid" />
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

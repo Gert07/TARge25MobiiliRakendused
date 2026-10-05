@@ -48,20 +48,93 @@ namespace Example_app.TicTacToe.Services
 
         public (int row, int col)? GetBotMove()
         {
-            List<(int r, int c)> emptyCells = new();
-            for (int r = 0; r < BoardSize; r++)
+            int bestScore = int.MinValue;
+            (int row, int col)? bestMove = null;
+
+            foreach (var move in GetAvailableMoves())
             {
-                for (int c = 0; c < BoardSize; c++)
+                Board[move.row, move.col] = BotSymbol;
+                int score = Minimax(false, 0, int.MinValue, int.MaxValue);
+                Board[move.row, move.col] = string.Empty;
+
+                if (score > bestScore)
                 {
-                    if (string.IsNullOrEmpty(Board[r, c]))
-                        emptyCells.Add((r, c));
+                    bestScore = score;
+                    bestMove = move;
                 }
             }
 
-            if (emptyCells.Count == 0) return null;
+            return bestMove;
+        }
 
-            Random rand = new();
-            return emptyCells[rand.Next(emptyCells.Count)];
+        private int Minimax(bool isBotTurn, int depth, int alpha, int beta)
+        {
+            if (CheckWin(out string winner))
+                return winner == BotSymbol ? 10 - depth : depth - 10;
+
+            if (IsBoardFull())
+                return 0;
+
+            if (isBotTurn)
+            {
+                int bestScore = int.MinValue;
+
+                foreach (var move in GetAvailableMoves())
+                {
+                    Board[move.row, move.col] = BotSymbol;
+                    int score = Minimax(false, depth + 1, alpha, beta);
+                    Board[move.row, move.col] = string.Empty;
+
+                    bestScore = Math.Max(bestScore, score);
+                    alpha = Math.Max(alpha, bestScore);
+                    if (beta <= alpha) break;
+                }
+
+                return bestScore;
+            }
+
+            int worstScore = int.MaxValue;
+
+            foreach (var move in GetAvailableMoves())
+            {
+                Board[move.row, move.col] = HumanSymbol;
+                int score = Minimax(true, depth + 1, alpha, beta);
+                Board[move.row, move.col] = string.Empty;
+
+                worstScore = Math.Min(worstScore, score);
+                beta = Math.Min(beta, worstScore);
+                if (beta <= alpha) break;
+            }
+
+            return worstScore;
+        }
+
+        private List<(int row, int col)> GetAvailableMoves()
+        {
+            List<(int row, int col)> moves = new();
+
+            // Eelista võrdse tulemusega käikude korral keskkohta ja seejärel nurki.
+            int center = BoardSize / 2;
+            AddMoveIfAvailable(moves, center, center);
+
+            AddMoveIfAvailable(moves, 0, 0);
+            AddMoveIfAvailable(moves, 0, BoardSize - 1);
+            AddMoveIfAvailable(moves, BoardSize - 1, 0);
+            AddMoveIfAvailable(moves, BoardSize - 1, BoardSize - 1);
+
+            for (int row = 0; row < BoardSize; row++)
+            {
+                for (int col = 0; col < BoardSize; col++)
+                    AddMoveIfAvailable(moves, row, col);
+            }
+
+            return moves;
+        }
+
+        private void AddMoveIfAvailable(List<(int row, int col)> moves, int row, int col)
+        {
+            if (string.IsNullOrEmpty(Board[row, col]) && !moves.Contains((row, col)))
+                moves.Add((row, col));
         }
 
         public bool CheckWin(out string winner)

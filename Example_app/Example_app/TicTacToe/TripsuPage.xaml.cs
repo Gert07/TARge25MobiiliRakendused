@@ -10,14 +10,14 @@ namespace Example_app.TicTacToe
         // 1. Lisatud puuduvad väljad
         private TicTacToeEngine _engine;
         private Button[,] _boardButtons;
+        private bool _isBotThinking;
 
         public TripsuPage()
         {
             InitializeComponent();
             _engine = new TicTacToeEngine(3);
-            ModePicker.SelectedIndex = 0;
-            SizePicker.SelectedIndex = 0;
             BuildBoardUI();
+            ModePicker.SelectedIndex = 0;
         }
 
         private void BuildBoardUI()
@@ -41,7 +41,7 @@ namespace Example_app.TicTacToe
                 {
                     Button btn = new Button
                     {
-                        FontSize = size == 3 ? 32 : (size == 4 ? 24 : 18),
+                        FontSize = 32,
                         FontAttributes = FontAttributes.Bold,
                         Margin = 2,
                         BackgroundColor = Colors.LightGray,
@@ -62,6 +62,10 @@ namespace Example_app.TicTacToe
 
         private async void OnCellClicked(int row, int col)
         {
+            if (_isBotThinking ||
+                (_engine.IsVsBot && _engine.CurrentPlayer != _engine.HumanSymbol))
+                return;
+
             if (!_engine.MakeMove(row, col)) return;
 
             UpdateCellUI(row, col);
@@ -71,8 +75,18 @@ namespace Example_app.TicTacToe
             _engine.SwitchPlayer();
             UpdateStatusLabel();
 
-            // Kui on boti kord
-            if (_engine.IsVsBot && _engine.CurrentPlayer == _engine.BotSymbol)
+            await MakeBotMoveAsync();
+        }
+
+        private async Task MakeBotMoveAsync()
+        {
+            if (!_engine.IsVsBot || _engine.CurrentPlayer != _engine.BotSymbol)
+                return;
+
+            _isBotThinking = true;
+            StatusLabel.Text = "Bot mõtleb...";
+
+            try
             {
                 await System.Threading.Tasks.Task.Delay(400); // Väike viivitus parema tunnetuse jaoks
                 var botMove = _engine.GetBotMove();
@@ -87,6 +101,10 @@ namespace Example_app.TicTacToe
                         UpdateStatusLabel();
                     }
                 }
+            }
+            finally
+            {
+                _isBotThinking = false;
             }
         }
 
@@ -135,6 +153,7 @@ namespace Example_app.TicTacToe
         private void ResetGame()
         {
             _engine.ResetGame(_engine.BoardSize);
+            _engine.SetStartingPlayer("X");
             for (int r = 0; r < _engine.BoardSize; r++)
             {
                 for (int c = 0; c < _engine.BoardSize; c++)
@@ -153,13 +172,15 @@ namespace Example_app.TicTacToe
 
         private void OnNewGameClicked(object sender, EventArgs e) => ResetGame();
 
-        private void OnWhoStartsClicked(object sender, EventArgs e)
+        private async void OnWhoStartsClicked(object sender, EventArgs e)
         {
+            ResetGame();
             Random rand = new();
             string starter = rand.Next(2) == 0 ? "X" : "O";
             _engine.SetStartingPlayer(starter);
-            DisplayAlert("Kes alustab?", $"Loosiga alustab mängija: {starter}", "Selge");
+            await DisplayAlertAsync("Kes alustab?", $"Loosiga alustab mängija: {starter}", "Selge");
             UpdateStatusLabel();
+            await MakeBotMoveAsync();
         }
 
         private void OnModeChanged(object sender, EventArgs e)
@@ -167,14 +188,6 @@ namespace Example_app.TicTacToe
             if (ModePicker.SelectedIndex == -1) return;
             _engine.IsVsBot = ModePicker.SelectedIndex == 1;
             ResetGame();
-        }
-
-        private void OnSizeChanged(object sender, EventArgs e)
-        {
-            if (SizePicker.SelectedIndex == -1) return;
-            int newSize = SizePicker.SelectedIndex + 3; // 0 -> 3x3, 1 -> 4x4, 2 -> 5x5
-            _engine.ResetGame(newSize);
-            BuildBoardUI();
         }
 
         private void OnToggleThemeClicked(object sender, EventArgs e)

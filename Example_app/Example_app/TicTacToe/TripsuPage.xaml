@@ -24,17 +24,6 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-
-                <Label Text="Suurus:" VerticalOptions="Center" Margin="10,0,0,0" />
-                <Picker x:Name="SizePicker" SelectedIndexChanged="OnSizeChanged">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>3x3</x:String>
-                            <x:String>4x4</x:String>
-                            <x:String>5x5</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
             </HorizontalStackLayout>
 
             <!-- Mängu staatus ja info -->

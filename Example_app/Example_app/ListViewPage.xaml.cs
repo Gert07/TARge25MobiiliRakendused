@@ -9,10 +9,10 @@ namespace Example_app // MUUDA SEE OMA PROJEKTI NIMERUUMIGS!
     // 1. ANDMEMUDEL
     public class Telefon
     {
-        public string Nimetus { get; set; }
-        public string Tootja { get; set; }
+        public string Nimetus { get; set; } = string.Empty;
+        public string Tootja { get; set; } = string.Empty;
         public int Hind { get; set; }
-        public string Pilt { get; set; } // Hoiab pildi nime või seadme failiteed
+        public string Pilt { get; set; } = string.Empty; // Hoiab pildi nime või seadme failiteed
     }
 
     // 2. PÕHILEHT
@@ -20,7 +20,7 @@ namespace Example_app // MUUDA SEE OMA PROJEKTI NIMERUUMIGS!
     {
         // Globaalsed muutujad
         ObservableCollection<Telefon> telefons;
-        ListView list;
+        CollectionView list;
         Entry entryNimetus, entryTootja, entryHind;
 
         // Muutujad pildi valimise jaoks
@@ -57,15 +57,14 @@ namespace Example_app // MUUDA SEE OMA PROJEKTI NIMERUUMIGS!
             Button btnKustuta = new Button { Text = "Kustuta valitud telefon", BackgroundColor = Colors.LightPink };
             btnKustuta.Clicked += Kustuta_Clicked;
 
-            // 4. LISTVIEW JA SELLE KUJUNDUS
-            list = new ListView
+            // 4. COLLECTIONVIEW JA SELLE KUJUNDUS
+            list = new CollectionView
             {
-                HasUnevenRows = true,
                 ItemsSource = telefons,
-                SelectionMode = ListViewSelectionMode.Single
+                SelectionMode = SelectionMode.Single
             };
 
-            list.ItemTapped += List_ItemTapped;
+            list.SelectionChanged += List_SelectionChanged;
 
             list.ItemTemplate = new DataTemplate(() =>
             {
@@ -105,7 +104,7 @@ namespace Example_app // MUUDA SEE OMA PROJEKTI NIMERUUMIGS!
                     Children = { imgPilt, textLayout }
                 };
 
-                return new ViewCell { View = rowLayout };
+                return rowLayout;
             });
 
             // 5. PANEME KÕIK LEHELE KOKKU
@@ -129,7 +128,7 @@ namespace Example_app // MUUDA SEE OMA PROJEKTI NIMERUUMIGS!
         // --- SÜNDMUSTE TÖÖTLEJAD (Event Handlers) ---
 
         // Pildi valimine telefoni failidest
-        private async void BtnValiPilt_Clicked(object sender, EventArgs e)
+        private async void BtnValiPilt_Clicked(object? sender, EventArgs e)
         {
             try
             {
@@ -148,12 +147,12 @@ namespace Example_app // MUUDA SEE OMA PROJEKTI NIMERUUMIGS!
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Viga", "Pildi valimine ebaõnnestus: " + ex.Message, "OK");
+                await DisplayAlertAsync("Viga", "Pildi valimine ebaõnnestus: " + ex.Message, "OK");
             }
         }
 
         // Uue telefoni lisamine
-        private void Lisa_Clicked(object sender, EventArgs e)
+        private async void Lisa_Clicked(object? sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(entryNimetus.Text) && !string.IsNullOrWhiteSpace(entryTootja.Text))
             {
@@ -183,18 +182,18 @@ namespace Example_app // MUUDA SEE OMA PROJEKTI NIMERUUMIGS!
             }
             else
             {
-                DisplayAlert("Viga", "Palun täida vähemalt mudeli ja tootja väljad!", "OK");
+                await DisplayAlertAsync("Viga", "Palun täida vähemalt mudeli ja tootja väljad!", "OK");
             }
         }
 
         // Telefoni kustutamine
-        private async void Kustuta_Clicked(object sender, EventArgs e)
+        private async void Kustuta_Clicked(object? sender, EventArgs e)
         {
-            Telefon valitudTelefon = list.SelectedItem as Telefon;
+            Telefon? valitudTelefon = list.SelectedItem as Telefon;
 
             if (valitudTelefon != null)
             {
-                bool vastus = await DisplayAlert("Kinnitus", $"Kas oled kindel, et soovid mudeli {valitudTelefon.Nimetus} kustutada?", "Jah", "Ei");
+                bool vastus = await DisplayAlertAsync("Kinnitus", $"Kas oled kindel, et soovid mudeli {valitudTelefon.Nimetus} kustutada?", "Jah", "Ei");
 
                 if (vastus == true)
                 {
@@ -204,18 +203,18 @@ namespace Example_app // MUUDA SEE OMA PROJEKTI NIMERUUMIGS!
             }
             else
             {
-                await DisplayAlert("Viga", "Palun vali nimekirjast telefon, mida soovid kustutada.", "OK");
+                await DisplayAlertAsync("Viga", "Palun vali nimekirjast telefon, mida soovid kustutada.", "OK");
             }
         }
 
         // Loendis reale vajutamine
-        private async void List_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void List_SelectionChanged(object? sender, SelectionChangedEventArgs e)
         {
-            Telefon valitudTelefon = e.Item as Telefon;
+            Telefon? valitudTelefon = e.CurrentSelection.FirstOrDefault() as Telefon;
 
             if (valitudTelefon != null)
             {
-                await DisplayAlert("Telefoni info", $"Tootja: {valitudTelefon.Tootja}\nMudel: {valitudTelefon.Nimetus}\nHind: {valitudTelefon.Hind} €", "Sulge");
+                await DisplayAlertAsync("Telefoni info", $"Tootja: {valitudTelefon.Tootja}\nMudel: {valitudTelefon.Nimetus}\nHind: {valitudTelefon.Hind} €", "Sulge");
             }
         }
     }

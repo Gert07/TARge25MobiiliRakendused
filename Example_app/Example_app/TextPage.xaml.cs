@@ -71,7 +71,9 @@ public partial class TextPage : ContentPage
 	}
 	private void Liikumine(object? sender, EventArgs e)
 	{
-		Button nupp = sender as Button;
+		if (sender is not Button nupp)
+			return;
+
 		if(nupp.ZIndex == 0)
 		{
 			Navigation.PopAsync();
@@ -98,7 +100,7 @@ public partial class TextPage : ContentPage
         string? text = editor.Text;
 		if (string.IsNullOrWhiteSpace(text))
 		{
-			await DisplayAlert("Viga", "Palun sisesta tekst", "Ok");
+			await DisplayAlertAsync("Viga", "Palun sisesta tekst", "Ok");
 			return;
 		}
 		try
@@ -107,7 +109,7 @@ public partial class TextPage : ContentPage
 		}
 		catch (Exception ex)
 		{
-			await DisplayAlert("TTS viga", ex.Message, "OK");
+			await DisplayAlertAsync("TTS viga", ex.Message, "OK");
 		}
 
     }

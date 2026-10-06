@@ -9,7 +9,7 @@ namespace Example_app.TicTacToe
     {
         // 1. Lisatud puuduvad väljad
         private TicTacToeEngine _engine;
-        private Button[,] _boardButtons;
+        private Button[,] _boardButtons = new Button[0, 0];
         private bool _isBotThinking;
 
         public TripsuPage()
@@ -70,7 +70,7 @@ namespace Example_app.TicTacToe
 
             UpdateCellUI(row, col);
 
-            if (CheckGameEnd()) return;
+            if (await CheckGameEndAsync()) return;
 
             _engine.SwitchPlayer();
             UpdateStatusLabel();
@@ -95,7 +95,7 @@ namespace Example_app.TicTacToe
                     _engine.MakeMove(botMove.Value.row, botMove.Value.col);
                     UpdateCellUI(botMove.Value.row, botMove.Value.col);
 
-                    if (!CheckGameEnd())
+                    if (!await CheckGameEndAsync())
                     {
                         _engine.SwitchPlayer();
                         UpdateStatusLabel();
@@ -127,14 +127,14 @@ namespace Example_app.TicTacToe
             }
         }
 
-        private bool CheckGameEnd()
+        private async Task<bool> CheckGameEndAsync()
         {
             if (_engine.CheckWin(out string winner))
             {
                 if (winner == "X") GameStats.XWins++;
                 else if (winner == "O") GameStats.OWins++;
 
-                DisplayAlert("Mäng läbi!", $"{winner} võitis! Kas soovid veel mängida?", "Jah");
+                await DisplayAlertAsync("Mäng läbi!", $"{winner} võitis! Kas soovid veel mängida?", "Jah");
                 ResetGame();
                 return true;
             }
@@ -142,7 +142,7 @@ namespace Example_app.TicTacToe
             if (_engine.IsBoardFull())
             {
                 GameStats.Draws++;
-                DisplayAlert("Mäng läbi!", "Tekkis viik! Kas soovid veel mängida?", "Jah");
+                await DisplayAlertAsync("Mäng läbi!", "Tekkis viik! Kas soovid veel mängida?", "Jah");
                 ResetGame();
                 return true;
             }

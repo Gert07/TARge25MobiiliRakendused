@@ -82,7 +82,9 @@ public partial class StepperSliderPage : ContentPage
 
     void OnCornerRadiusChanged(object? sender, ValueChangedEventArgs e)
     {
-        ((RoundRectangle)rectangle.StrokeShape).CornerRadius = new CornerRadius(e.NewValue);
+        if (rectangle.StrokeShape is RoundRectangle shape)
+            shape.CornerRadius = new CornerRadius(e.NewValue);
+
         UpdateLabels(null, e.NewValue, null);
     }
 

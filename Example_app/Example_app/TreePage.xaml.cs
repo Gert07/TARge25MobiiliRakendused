@@ -9,9 +9,6 @@ namespace Example_app;
 
 public partial class TreePage : ContentPage
 {
-    private CancellationTokenSource? _nightModeCts;
-    private bool _sunWasVisible;
-
     public TreePage()
     {
         InitializeComponent();

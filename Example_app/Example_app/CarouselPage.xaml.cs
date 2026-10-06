@@ -1,4 +1,5 @@
 using System.Collections.ObjectModel;
+using Microsoft.Maui.Controls.Shapes;
 
 public class CarouselPage : ContentPage
 
@@ -8,9 +9,9 @@ public class CarouselPage : ContentPage
 
     {
 
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
 
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get; set; } = string.Empty;
 
     }
 
@@ -61,13 +62,19 @@ public class CarouselPage : ContentPage
 
             {
 
-                var frame = new Frame
+                var frame = new Border
 
                 {
 
-                    CornerRadius = 15,
+                    StrokeShape = new RoundRectangle { CornerRadius = new CornerRadius(15) },
 
-                    HasShadow = true,
+                    Shadow = new Shadow
+                    {
+                        Brush = Colors.Black,
+                        Offset = new Point(0, 2),
+                        Radius = 4,
+                        Opacity = 0.35f
+                    },
 
                     Padding = 0,
 
@@ -211,7 +218,7 @@ public class CarouselPage : ContentPage
 
         // Automaatne kerimine
 
-        Device.StartTimer(TimeSpan.FromSeconds(4), () =>
+        Dispatcher.StartTimer(TimeSpan.FromSeconds(4), () =>
 
         {
 

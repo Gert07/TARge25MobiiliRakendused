@@ -7,7 +7,7 @@ namespace Example_app.TicTacToe.Services
     public class TicTacToeEngine
     {
         public int BoardSize { get; private set; }
-        public string[,] Board { get; private set; }
+        public string[,] Board { get; private set; } = new string[0, 0];
         public string CurrentPlayer { get; private set; } = "X";
         public bool IsVsBot { get; set; } = false;
         public string HumanSymbol { get; set; } = "X";

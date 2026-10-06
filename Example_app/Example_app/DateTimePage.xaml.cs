@@ -8,6 +8,13 @@ public partial class DateTimePage : ContentPage
 	AbsoluteLayout al;
 	public DateTimePage()
 	{
+		datetimeLabel = new Label
+		{
+			Text = "Vali kuupäev või aeg",
+			FontSize = 24,
+			HorizontalOptions = LayoutOptions.Center,
+			VerticalOptions = LayoutOptions.Center
+		};
 		datePicker = new DatePicker
 		{
 			MinimumDate = DateTime.Now.AddDays(-15),
@@ -30,13 +37,6 @@ public partial class DateTimePage : ContentPage
 		timePicker.PropertyChanged += (sender, e) =>
 		{
 			datetimeLabel.Text = $"Valitud kellaaeg: \n{timePicker.Time:T}";
-		};
-		datetimeLabel = new Label
-		{
-			Text = "Vali kuupäev või aeg",
-			FontSize = 24,
-			HorizontalOptions = LayoutOptions.Center,
-			VerticalOptions = LayoutOptions.Center
 		};
 		al = new AbsoluteLayout { Children = { datePicker, timePicker, datetimeLabel } };
 		List<View> controls = new List<View> { datePicker, timePicker, datetimeLabel };

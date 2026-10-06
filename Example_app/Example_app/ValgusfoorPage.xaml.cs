@@ -3,7 +3,7 @@ namespace Example_app;
 public partial class ValgusfoorPage : ContentPage
 {
     int count = 0;
-    private CancellationTokenSource _nightModeCts;
+    private CancellationTokenSource? _nightModeCts;
 
     public ValgusfoorPage()
     {
@@ -115,16 +115,18 @@ public partial class ValgusfoorPage : ContentPage
 
     private void Liikumine(object? sender, EventArgs e)
     {
-        Button nupp = sender as Button;
-        if (nupp?.ZIndex == 0)
+        if (sender is not Button nupp)
+            return;
+
+        if (nupp.ZIndex == 0)
         {
             Navigation.PushAsync(new TextPage());
         }
-        else if (nupp?.ZIndex == 1)
+        else if (nupp.ZIndex == 1)
         {
             Navigation.PopToRootAsync();
         }
-        else if (nupp?.ZIndex == 2)
+        else if (nupp.ZIndex == 2)
         {
             Navigation.PushAsync(new FigurePage());
         }

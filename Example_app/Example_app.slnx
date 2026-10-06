@@ -1,5 +1,7 @@
 <Solution>
+  <Project Path="CarouselView/CarouselView.csproj" Id="c7b9e658-2632-41fb-9e81-30ee8bf53177" />
   <Project Path="Example_app/Example_app.csproj">
     <Deploy />
   </Project>
+  <Project Path="MultiLangual/MultiLangual.csproj" Id="285afbb0-a162-45b5-98f0-233c73628f8d" />
 </Solution>

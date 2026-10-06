@@ -91,9 +91,6 @@
 	  <MauiXaml Update="ListViewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Multilangual\MultilangualPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Popup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

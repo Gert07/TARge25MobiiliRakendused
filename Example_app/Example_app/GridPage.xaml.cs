@@ -2,7 +2,7 @@ namespace Example_app;
 
 public partial class GridPage : ContentPage
 {
-    Grid gr4x1, gr3x3;
+    Grid gr4x1;
     Picker picker; //Piltide valik
     Image image; //pilt
     Switch sw_image, sw_grid;
@@ -47,7 +47,7 @@ public partial class GridPage : ContentPage
         {
             if (e.Value)
             {
-                gr3x3 = Tee_grid3x3();
+                Grid gr3x3 = Tee_grid3x3();
                 gr4x1.Add(gr3x3, 0, 2);
                 gr4x1.SetColumnSpan(gr3x3, 2);
             }
@@ -94,7 +94,7 @@ public partial class GridPage : ContentPage
 
     private Grid Tee_grid3x3()
     {
-        gr3x3 = new Grid();
+        Grid gr3x3 = new Grid();
         for (int i = 0; i < 3; i++)
         {
             gr3x3.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });

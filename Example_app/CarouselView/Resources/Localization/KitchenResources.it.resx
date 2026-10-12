@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="PageTitle" xml:space="preserve"><value>Masterclass di cucina italiana</value></data>
+  <data name="Eyebrow" xml:space="preserve"><value>CINQUE PIATTI · UN VIAGGIO DI SAPORI</value></data>
+  <data name="Heading" xml:space="preserve"><value>Un assaggio d'Italia.</value></data>
+  <data name="Subtitle" xml:space="preserve"><value>Scopri i grandi classici, dalla pasta romana a un delizioso tiramisù.</value></data>
+  <data name="Details" xml:space="preserve"><value>Scopri il piatto  →</value></data>
+  <data name="Previous" xml:space="preserve"><value>Piatto precedente</value></data>
+  <data name="Next" xml:space="preserve"><value>Piatto successivo</value></data>
+  <data name="CounterFormat" xml:space="preserve"><value>Piatto {0} di {1}</value></data>
+  <data name="AutoPlaying" xml:space="preserve"><value>Presentazione · ogni 4 secondi</value></data>
+  <data name="AutoPaused" xml:space="preserve"><value>Presentazione in pausa</value></data>
+  <data name="Pause" xml:space="preserve"><value>Pausa</value></data>
+  <data name="Play" xml:space="preserve"><value>Riprendi</value></data>
+  <data name="TapHint" xml:space="preserve"><value>Tocca una scheda per scoprire gli ingredienti.</value></data>
+  <data name="Footer" xml:space="preserve"><value>Creato con curiosità. Servito con amore.</value></data>
+  <data name="Ingredients" xml:space="preserve"><value>INGREDIENTI PRINCIPALI</value></data>
+  <data name="Preparation" xml:space="preserve"><value>Tempo di preparazione indicativo</value></data>
+  <data name="ChefTip" xml:space="preserve"><value>IL CONSIGLIO DELLO CHEF</value></data>
+  <data name="Close" xml:space="preserve"><value>Ho capito</value></data>
+  <data name="CarbonaraTitle" xml:space="preserve"><value>Pasta alla carbonara</value></data>
+  <data name="CarbonaraDescription" xml:space="preserve"><value>Un classico romano con una salsa vellutata di uova, pecorino e guanciale croccante.</value></data>
+  <data name="CarbonaraRegion" xml:space="preserve"><value>ROMA · LAZIO</value></data>
+  <data name="CarbonaraCategory" xml:space="preserve"><value>PASTA</value></data>
+  <data name="CarbonaraIngredients" xml:space="preserve"><value>• Spaghetti
+• Guanciale
+• Uova e tuorli
+• Pecorino Romano
+• Pepe nero</value></data>
+  <data name="CarbonaraPreparation" xml:space="preserve"><value>25 minuti</value></data>
+  <data name="CarbonaraTip" xml:space="preserve"><value>Togli la padella dal fuoco prima di aggiungere le uova. Un po' di acqua di cottura della pasta aiuta a rendere la salsa vellutata.</value></data>
+  <data name="PizzaTitle" xml:space="preserve"><value>Pizza Margherita</value></data>
+  <data name="PizzaDescription" xml:space="preserve"><value>Pomodoro, mozzarella e basilico su una base napoletana soffice e dorata.</value></data>
+  <data name="PizzaRegion" xml:space="preserve"><value>NAPOLI · CAMPANIA</value></data>
+  <data name="PizzaCategory" xml:space="preserve"><value>PIZZA</value></data>
+  <data name="PizzaIngredients" xml:space="preserve"><value>• Impasto per pizza: farina, acqua, lievito e sale
+• Pomodori
+• Mozzarella fresca
+• Basilico fresco
+• Olio extravergine d'oliva</value></data>
+  <data name="PizzaPreparation" xml:space="preserve"><value>30 minuti con l'impasto pronto; considera altre 8–24 ore per la lievitazione.</value></data>
+  <data name="PizzaTip" xml:space="preserve"><value>Preriscalda bene il forno e la pietra per pizza. Una superficie molto calda aiuta a ottenere una base croccante.</value></data>
+  <data name="TiramisuTitle" xml:space="preserve"><value>Tiramisù</value></data>
+  <data name="TiramisuDescription" xml:space="preserve"><value>Savoiardi imbevuti di caffè, soffice crema al mascarpone e cacao.</value></data>
+  <data name="TiramisuRegion" xml:space="preserve"><value>TREVISO · VENETO</value></data>
+  <data name="TiramisuCategory" xml:space="preserve"><value>DOLCE</value></data>
+  <data name="TiramisuIngredients" xml:space="preserve"><value>• Savoiardi
+• Mascarpone
+• Caffè espresso
+• Uova pastorizzate
+• Zucchero
+• Cacao amaro</value></data>
+  <data name="TiramisuPreparation" xml:space="preserve"><value>30 minuti + almeno 4 ore in frigorifero.</value></data>
+  <data name="TiramisuTip" xml:space="preserve"><value>Immergi brevemente i savoiardi nel caffè freddo, così mantengono la forma. Spolvera con il cacao poco prima di servire.</value></data>
+  <data name="RisottoTitle" xml:space="preserve"><value>Risotto alla milanese</value></data>
+  <data name="RisottoDescription" xml:space="preserve"><value>Riso dorato allo zafferano, mescolato lentamente fino a diventare cremoso.</value></data>
+  <data name="RisottoRegion" xml:space="preserve"><value>MILANO · LOMBARDIA</value></data>
+  <data name="RisottoCategory" xml:space="preserve"><value>RISOTTO</value></data>
+  <data name="RisottoIngredients" xml:space="preserve"><value>• Riso Carnaroli o Arborio
+• Zafferano
+• Brodo caldo
+• Cipolla
+• Burro
+• Parmigiano Reggiano
+• Vino bianco secco</value></data>
+  <data name="RisottoPreparation" xml:space="preserve"><value>35 minuti</value></data>
+  <data name="RisottoTip" xml:space="preserve"><value>Aggiungi il brodo caldo un mestolo alla volta. A fuoco spento, manteca con burro e parmigiano per un risultato cremoso.</value></data>
+  <data name="LasagneTitle" xml:space="preserve"><value>Lasagne alla bolognese</value></data>
+  <data name="LasagneDescription" xml:space="preserve"><value>Strati di pasta, ragù a cottura lenta e cremosa besciamella.</value></data>
+  <data name="LasagneRegion" xml:space="preserve"><value>BOLOGNA · EMILIA-ROMAGNA</value></data>
+  <data name="LasagneCategory" xml:space="preserve"><value>AL FORNO</value></data>
+  <data name="LasagneIngredients" xml:space="preserve"><value>• Sfoglie di pasta fresca per lasagne
+• Ragù di manzo e maiale
+• Pomodori
+• Cipolla, carota e sedano
+• Besciamella: burro, farina e latte
+• Parmigiano Reggiano</value></data>
+  <data name="LasagnePreparation" xml:space="preserve"><value>Circa 3 ore, compresa la cottura lenta del ragù.</value></data>
+  <data name="LasagneTip" xml:space="preserve"><value>Lascia riposare le lasagne per 10–15 minuti dopo la cottura, così gli strati rimangono compatti al taglio.</value></data>
+  <data name="ChooseLanguage" xml:space="preserve"><value>Scegli la lingua</value></data>
+  <data name="CloseLanguages" xml:space="preserve"><value>Chiudi il menu delle lingue</value></data>
+  <data name="SelectEstonian" xml:space="preserve"><value>Passa all'estone</value></data>
+  <data name="SelectEnglish" xml:space="preserve"><value>Passa all'inglese</value></data>
+  <data name="SelectItalian" xml:space="preserve"><value>Passa all'italiano</value></data>
+</root>

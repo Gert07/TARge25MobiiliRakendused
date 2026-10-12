@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="PageTitle" xml:space="preserve"><value>Itaalia köögi meistriklass</value></data>
+  <data name="Eyebrow" xml:space="preserve"><value>VIIS ROOGA · ÜKS MAITSEV RÄNNAK</value></data>
+  <data name="Heading" xml:space="preserve"><value>Killuke Itaaliat sinu taldrikul.</value></data>
+  <data name="Subtitle" xml:space="preserve"><value>Avasta Itaalia klassikud Rooma pastast hõrgu tiramisuni.</value></data>
+  <data name="Details" xml:space="preserve"><value>Tutvu roaga  →</value></data>
+  <data name="Previous" xml:space="preserve"><value>Eelmine roog</value></data>
+  <data name="Next" xml:space="preserve"><value>Järgmine roog</value></data>
+  <data name="CounterFormat" xml:space="preserve"><value>Roog {0} / {1}</value></data>
+  <data name="AutoPlaying" xml:space="preserve"><value>Slaidiesitus · iga 4 sekundi järel</value></data>
+  <data name="AutoPaused" xml:space="preserve"><value>Slaidiesitus peatatud</value></data>
+  <data name="Pause" xml:space="preserve"><value>Peata</value></data>
+  <data name="Play" xml:space="preserve"><value>Jätka</value></data>
+  <data name="TapHint" xml:space="preserve"><value>Koostisosade avastamiseks puuduta kaarti.</value></data>
+  <data name="Footer" xml:space="preserve"><value>Loodud uudishimuga. Serveeritud armastusega.</value></data>
+  <data name="Ingredients" xml:space="preserve"><value>PEAMISED KOOSTISOSAD</value></data>
+  <data name="Preparation" xml:space="preserve"><value>Ligikaudne valmistamisaeg</value></data>
+  <data name="ChefTip" xml:space="preserve"><value>KOKA NIPP</value></data>
+  <data name="Close" xml:space="preserve"><value>Selge</value></data>
+  <data name="CarbonaraTitle" xml:space="preserve"><value>Pasta Carbonara</value></data>
+  <data name="CarbonaraDescription" xml:space="preserve"><value>Rooma klassika siidise munakastme, pecorino ja krõbeda guanciale'ga.</value></data>
+  <data name="CarbonaraRegion" xml:space="preserve"><value>ROOMA · LAZIO</value></data>
+  <data name="CarbonaraCategory" xml:space="preserve"><value>PASTA</value></data>
+  <data name="CarbonaraIngredients" xml:space="preserve"><value>• Spagetid
+• Guanciale (vinnutatud seapõsk)
+• Munad ja munakollased
+• Pecorino Romano
+• Must pipar</value></data>
+  <data name="CarbonaraPreparation" xml:space="preserve"><value>25 minutit</value></data>
+  <data name="CarbonaraTip" xml:space="preserve"><value>Tõsta pann enne munade lisamist tulelt. Veidi pasta keeduvett aitab muuta kastme siidiseks.</value></data>
+  <data name="PizzaTitle" xml:space="preserve"><value>Pizza Margherita</value></data>
+  <data name="PizzaDescription" xml:space="preserve"><value>Tomat, mozzarella ja basiilik õhulisel kuldsel Napoli pitsapõhjal.</value></data>
+  <data name="PizzaRegion" xml:space="preserve"><value>NAPOLI · CAMPANIA</value></data>
+  <data name="PizzaCategory" xml:space="preserve"><value>PITSA</value></data>
+  <data name="PizzaIngredients" xml:space="preserve"><value>• Pitsatainas: jahu, vesi, pärm ja sool
+• Tomatid
+• Värske mozzarella
+• Värske basiilik
+• Ekstra-neitsioliiviõli</value></data>
+  <data name="PizzaPreparation" xml:space="preserve"><value>Valmis tainaga 30 minutit; taina kerkimiseks arvesta lisaks 8–24 tundi.</value></data>
+  <data name="PizzaTip" xml:space="preserve"><value>Kuumuta ahi ja pitsakivi korralikult ette. Väga kuum pind aitab saada krõbeda põhja.</value></data>
+  <data name="TiramisuTitle" xml:space="preserve"><value>Tiramisu</value></data>
+  <data name="TiramisuDescription" xml:space="preserve"><value>Kohvis immutatud küpsised, õhuline mascarpone-kreem ja kakao.</value></data>
+  <data name="TiramisuRegion" xml:space="preserve"><value>TREVISO · VENETO</value></data>
+  <data name="TiramisuCategory" xml:space="preserve"><value>MAGUSTOIT</value></data>
+  <data name="TiramisuIngredients" xml:space="preserve"><value>• Savoiardi-küpsised
+• Mascarpone
+• Espresso
+• Pastöriseeritud munad
+• Suhkur
+• Magustamata kakao</value></data>
+  <data name="TiramisuPreparation" xml:space="preserve"><value>30 minutit + vähemalt 4 tundi külmkapis.</value></data>
+  <data name="TiramisuTip" xml:space="preserve"><value>Kasta küpsised korraks jahtunud kohvisse, et need säilitaksid kuju. Puista kakao peale vahetult enne serveerimist.</value></data>
+  <data name="RisottoTitle" xml:space="preserve"><value>Risotto alla Milanese</value></data>
+  <data name="RisottoDescription" xml:space="preserve"><value>Kuldne safraniriis, mis valmib aeglasel segamisel mõnusalt kreemiseks.</value></data>
+  <data name="RisottoRegion" xml:space="preserve"><value>MILANO · LOMBARDIA</value></data>
+  <data name="RisottoCategory" xml:space="preserve"><value>RISOTO</value></data>
+  <data name="RisottoIngredients" xml:space="preserve"><value>• Carnaroli- või Arborio-riis
+• Safran
+• Soe puljong
+• Sibul
+• Või
+• Parmigiano Reggiano
+• Kuiv valge vein</value></data>
+  <data name="RisottoPreparation" xml:space="preserve"><value>35 minutit</value></data>
+  <data name="RisottoTip" xml:space="preserve"><value>Lisa sooja puljongit kulbitäie kaupa. Sega või ja parmesan sisse pärast poti tulelt tõstmist.</value></data>
+  <data name="LasagneTitle" xml:space="preserve"><value>Lasagne alla Bolognese</value></data>
+  <data name="LasagneDescription" xml:space="preserve"><value>Mõnusad pastakihid aeglaselt valminud raguu ja kreemise bešamelliga.</value></data>
+  <data name="LasagneRegion" xml:space="preserve"><value>BOLOGNA · EMILIA-ROMAGNA</value></data>
+  <data name="LasagneCategory" xml:space="preserve"><value>AHJUROOG</value></data>
+  <data name="LasagneIngredients" xml:space="preserve"><value>• Värsked lasanjeplaadid
+• Veise- ja sealihast raguu
+• Tomatid
+• Sibul, porgand ja seller
+• Bešamell: või, jahu ja piim
+• Parmigiano Reggiano</value></data>
+  <data name="LasagnePreparation" xml:space="preserve"><value>Umbes 3 tundi koos raguu aeglase hautamisega.</value></data>
+  <data name="LasagneTip" xml:space="preserve"><value>Lase lasanjel pärast küpsetamist 10–15 minutit seista, et lõigates püsiksid kihid koos.</value></data>
+  <data name="ChooseLanguage" xml:space="preserve"><value>Vali keel</value></data>
+  <data name="CloseLanguages" xml:space="preserve"><value>Sulge keelemenüü</value></data>
+  <data name="SelectEstonian" xml:space="preserve"><value>Vali eesti keel</value></data>
+  <data name="SelectEnglish" xml:space="preserve"><value>Vali inglise keel</value></data>
+  <data name="SelectItalian" xml:space="preserve"><value>Vali itaalia keel</value></data>
+</root>

@@ -4,13 +4,13 @@ Ava lahenduses **CarouselView** projekt ja määra see käivitusprojektiks. Käi
 
 - Viis kohalikku toidupilti: carbonara, Margherita, tiramisu, safranirisoto ja lasanje.
 - `CarouselView` kasutab korduvkasutatavat, tüübistatud `DataTemplate`-i ja `Dish`-andmemudelit.
-- `IndicatorView` on seotud karusselliga; edasi/tagasi nupud sobivad ka arvutile.
+- `IndicatorView` on seotud karusselliga. Kaarti saab vahetada pühkimisega või automaatse slaidiesitusega.
 - Neljasekundiline taimer arvestab käsitsi valitud asukohta ning liigub viimaselt roalt esimesele.
 - **Peata/Jätka** lubab slaidiesitust juhtida. Detailakna või lipumenüü avamise ajal, lehelt lahkudes ja rakenduse taustale minnes taimer peatub.
 - Kaardi või **Tutvu roaga** nupu vajutus avab `DisplayAlertAsync`-akna koostisosade, valmistamisaja ja nipiga.
 - Keeled: eesti, inglise ja itaalia. Keele valimiseks ava aktiivse lipu ja allanoolega rippmenüü ning vajuta soovitud lipule. Tõlked asuvad failides `Resources/Localization/KitchenResources.et.resx`, `KitchenResources.resx` ja `KitchenResources.it.resx`. Neutraalne ressurss on ingliskeelne.
 - Keele vahetamine uuendab olemasolevaid kaarte ja kasutajaliidest kohe; valik salvestatakse `Preferences` abil võtmega `Kitchen.Language`.
-- Kujunduses on soe gradient, oliivirohelised nupud, ümardatud kaardid ning karusselli kerimisanimatsioon.
+- Kujunduses on säilinud päikesekollane ja taevasinine gradient, tomatipunased nupud ning kuldsed kaardiservad. Lihtsustatud vaates on suurem ja kontrastsem tekst; tervitusplokk, piirkonnanimed, noolenupud, loendur ning jalus on eemaldatud.
 
 ## Koodi ülesehitus
 
@@ -28,12 +28,12 @@ dotnet build CarouselView.csproj -f net10.0-android --no-restore
 ```
 
 Käsitsi kontrollimiseks:
-1. Ava galerii, oota neli sekundit ja kontrolli aktiivse täpi ning loenduri muutumist.
+1. Ava galerii, oota neli sekundit ja kontrolli aktiivse täpi muutumist.
 2. Liigu käsitsi kolmandale kaardile ja oota: järgmisena peab avanema neljas kaart.
 3. Liigu viimasele kaardile ja kontrolli automaatset jätkamist esimeselt kaardilt.
 4. Peata slaidiesitus; kaart peab jääma paigale. Jätka.
 5. Ava detailid kaardi ja nupu kaudu. Hoia aken avatuna üle nelja sekundi; taustal ei tohi kaart vahetuda.
-6. Ava lipumenüü ja vali kordamööda Eesti, Ühendkuningriigi ning Itaalia lipp. Kontrolli pealkirja, kirjeldust, detaile, loendurit ja juhtnuppe. Taaskäivita rakendus ja kontrolli keele säilimist.
+6. Ava lipumenüü ja vali kordamööda Eesti, Ühendkuningriigi ning Itaalia lipp. Kontrolli pealkirja, kirjeldust, detaile ja juhtnuppe. Taaskäivita rakendus ja kontrolli keele säilimist.
 7. Lahku lehelt või vii rakendus taustale. Naasmisel peab slaidiesitus jätkuma ainult siis, kui see oli sisse lülitatud.
 
 ## Genereeritud pildid
@@ -93,3 +93,5 @@ Lasagne alla Bolognese: a generous square portion with visible pasta, slow cooke
 ```
 
 Lippude genereerimise promptid ja pildifailid: [Kitchen/FlagImages.md](Kitchen/FlagImages.md).
+
+Varem loodud kokamaskoti pilt ja prompt on säilitatud failis [Kitchen/Mascot.md](Kitchen/Mascot.md); maskotti praegusel avalehel ei kuvata.

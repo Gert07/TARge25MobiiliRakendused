@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AlienBreach.Core/AlienBreach.Core.csproj" />
+    <Project Path="src/AlienBreach.Mobile/AlienBreach.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AlienBreach.Tests/AlienBreach.Tests.csproj" />
+  </Folder>
+</Solution>

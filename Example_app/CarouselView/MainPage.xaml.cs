@@ -103,15 +103,6 @@ public partial class MainPage : ContentPage
         RestartAutoScroll();
     }
 
-    private void OnPreviousClicked(object? sender, EventArgs e) => Move(-1);
-    private void OnNextClicked(object? sender, EventArgs e) => Move(1);
-
-    private void Move(int offset)
-    {
-        FoodCarousel.Position = (FoodCarousel.Position + offset + viewModel.Dishes.Count) % viewModel.Dishes.Count;
-        RestartAutoScroll();
-    }
-
     private async void OnDishTapped(object? sender, TappedEventArgs e)
     {
         if (e.Parameter is Dish dish) await ShowDetailsAsync(dish);

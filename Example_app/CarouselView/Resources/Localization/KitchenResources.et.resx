@@ -86,4 +86,9 @@
   <data name="SelectEstonian" xml:space="preserve"><value>Vali eesti keel</value></data>
   <data name="SelectEnglish" xml:space="preserve"><value>Vali inglise keel</value></data>
   <data name="SelectItalian" xml:space="preserve"><value>Vali itaalia keel</value></data>
+  <data name="MascotEyebrow" xml:space="preserve"><value>SINU KÖÖGISÕBER</value></data>
+  <data name="MascotGreeting" xml:space="preserve"><value>Ciao, sõber!</value></data>
+  <data name="MascotIntro" xml:space="preserve"><value>Avastame koos Itaalia maitseid!</value></data>
+  <data name="MascotTapHint" xml:space="preserve"><value>Puuduta kokka ja saa tervitus!</value></data>
+  <data name="MascotDescription" xml:space="preserve"><value>Naeratav Itaalia kokk pitsaga. Puuduta teda tervitusanimatsiooni nägemiseks.</value></data>
 </root>

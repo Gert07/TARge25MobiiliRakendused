@@ -86,4 +86,9 @@
   <data name="SelectEstonian" xml:space="preserve"><value>Switch to Estonian</value></data>
   <data name="SelectEnglish" xml:space="preserve"><value>Switch to English</value></data>
   <data name="SelectItalian" xml:space="preserve"><value>Switch to Italian</value></data>
+  <data name="MascotEyebrow" xml:space="preserve"><value>YOUR KITCHEN BUDDY</value></data>
+  <data name="MascotGreeting" xml:space="preserve"><value>Ciao, friend!</value></data>
+  <data name="MascotIntro" xml:space="preserve"><value>Let's discover delicious Italy together!</value></data>
+  <data name="MascotTapHint" xml:space="preserve"><value>Tap the chef for a little hello.</value></data>
+  <data name="MascotDescription" xml:space="preserve"><value>A smiling Italian chef holding a pizza. Tap to make him greet you.</value></data>
 </root>

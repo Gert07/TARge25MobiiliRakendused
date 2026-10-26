@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:services="clr-namespace:Example_app.Services"
+             x:Class="Example_app.Views.Game.StatsPage"
+             Title="{services:Translate Statistics}">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15" MaximumWidthRequest="600">
+            <Label Text="{services:Translate StatsTitle}" FontSize="24" FontAttributes="Bold" />
+            <Border Stroke="Gray" Padding="20" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout Spacing="10">
+                    <Label x:Name="XWinsLabel" FontSize="18" />
+                    <Label x:Name="OWinsLabel" FontSize="18" />
+                    <Label x:Name="DrawsLabel" FontSize="18" />
+                </VerticalStackLayout>
+            </Border>
+            <Button Text="{services:Translate ResetStats}" Clicked="OnResetStatsClicked" BackgroundColor="#D83B01" TextColor="White" />
+            <Button Text="{services:Translate Back}" Clicked="OnBackClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+

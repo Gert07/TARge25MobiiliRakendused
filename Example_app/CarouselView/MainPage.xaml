@@ -6,16 +6,16 @@
              x:Class="CarouselView.MainPage"
              x:DataType="vm:KitchenViewModel"
              Title="{Binding Strings[PageTitle]}"
-             BackgroundColor="#F7F2E9">
+             BackgroundColor="#FFF9E8">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#FBF7EF" Offset="0" />
-            <GradientStop Color="#E8EAD9" Offset="1" />
+            <GradientStop Color="#FFF8DA" Offset="0" />
+            <GradientStop Color="#E8F6FF" Offset="1" />
         </LinearGradientBrush>
     </ContentPage.Background>
     <ContentPage.Resources>
         <Style TargetType="Label">
-            <Setter Property="TextColor" Value="#273B30" />
+            <Setter Property="TextColor" Value="#203754" />
             <Setter Property="FontFamily" Value="OpenSansRegular" />
         </Style>
         <Style x:Key="LanguageFlagButton" TargetType="ImageButton">
@@ -28,17 +28,6 @@
             <Setter Property="WidthRequest" Value="76" />
             <Setter Property="Padding" Value="8,0" />
         </Style>
-        <Style x:Key="ArrowButton" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="#FFFFFF" />
-            <Setter Property="TextColor" Value="#294D3C" />
-            <Setter Property="BorderColor" Value="#D7DECF" />
-            <Setter Property="BorderWidth" Value="1" />
-            <Setter Property="CornerRadius" Value="22" />
-            <Setter Property="FontSize" Value="22" />
-            <Setter Property="WidthRequest" Value="48" />
-            <Setter Property="HeightRequest" Value="48" />
-            <Setter Property="Padding" Value="0" />
-        </Style>
     </ContentPage.Resources>
 
     <!-- Vertical scrolling also supports small and landscape screens. -->
@@ -50,10 +39,10 @@
                     <BoxView Color="#375B43" WidthRequest="5" HeightRequest="22" />
                     <BoxView Color="#FFFFFF" WidthRequest="5" HeightRequest="22" />
                     <BoxView Color="#B64D35" WidthRequest="5" HeightRequest="22" />
-                    <Label Text="CUCINA" Margin="8,0,0,0" FontSize="12"
-                           FontAttributes="Bold" CharacterSpacing="3" VerticalOptions="Center" />
+                    <Label Text="CUCINA" Margin="8,0,0,0" FontSize="14"
+                           FontAttributes="Bold" CharacterSpacing="2" VerticalOptions="Center" />
                 </HorizontalStackLayout>
-                <Border Grid.Column="1" Stroke="#D5DCCB" BackgroundColor="#FFFDF8"
+                <Border Grid.Column="1" Stroke="#B9DFED" BackgroundColor="#FFFFFF"
                         StrokeShape="RoundRectangle 16" Padding="2">
                     <Grid WidthRequest="82" HeightRequest="48">
                         <ImageButton Source="{Binding SelectedLanguageFlag}" Aspect="AspectFit"
@@ -62,20 +51,20 @@
                                      SemanticProperties.Description="{Binding LanguageMenuDescription}" />
                         <Label Text="{Binding LanguageMenuChevron}" InputTransparent="True"
                                HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,10,0"
-                               FontSize="18" TextColor="#294D3C" />
+                               FontSize="18" TextColor="#225A83" />
                     </Grid>
                 </Border>
                 <Border Grid.Row="1" Grid.Column="1" IsVisible="{Binding IsLanguageMenuOpen}"
-                        HorizontalOptions="End" Margin="0,8,0,0" Padding="4" Stroke="#D5DCCB"
-                        BackgroundColor="#FFFDF8" StrokeShape="RoundRectangle 16">
+                        HorizontalOptions="End" Margin="0,8,0,0" Padding="4" Stroke="#B9DFED"
+                        BackgroundColor="#FFFFFF" StrokeShape="RoundRectangle 16">
                     <VerticalStackLayout Spacing="4">
                         <ImageButton Source="flag_et.png" Style="{StaticResource LanguageFlagButton}"
                                      Command="{Binding SetLanguageCommand}" CommandParameter="et"
                                      SemanticProperties.Description="{Binding Strings[SelectEstonian]}">
                             <ImageButton.Triggers>
                                 <DataTrigger TargetType="ImageButton" Binding="{Binding IsEstonian}" Value="True">
-                                    <Setter Property="BackgroundColor" Value="#DCE8D5" />
-                                    <Setter Property="BorderColor" Value="#294D3C" />
+                                    <Setter Property="BackgroundColor" Value="#FFF0BD" />
+                                    <Setter Property="BorderColor" Value="#225A83" />
                                 </DataTrigger>
                             </ImageButton.Triggers>
                         </ImageButton>
@@ -84,8 +73,8 @@
                                      SemanticProperties.Description="{Binding Strings[SelectEnglish]}">
                             <ImageButton.Triggers>
                                 <DataTrigger TargetType="ImageButton" Binding="{Binding IsEnglish}" Value="True">
-                                    <Setter Property="BackgroundColor" Value="#DCE8D5" />
-                                    <Setter Property="BorderColor" Value="#294D3C" />
+                                    <Setter Property="BackgroundColor" Value="#FFF0BD" />
+                                    <Setter Property="BorderColor" Value="#225A83" />
                                 </DataTrigger>
                             </ImageButton.Triggers>
                         </ImageButton>
@@ -94,24 +83,21 @@
                                      SemanticProperties.Description="{Binding Strings[SelectItalian]}">
                             <ImageButton.Triggers>
                                 <DataTrigger TargetType="ImageButton" Binding="{Binding IsItalian}" Value="True">
-                                    <Setter Property="BackgroundColor" Value="#DCE8D5" />
-                                    <Setter Property="BorderColor" Value="#294D3C" />
+                                    <Setter Property="BackgroundColor" Value="#FFF0BD" />
+                                    <Setter Property="BorderColor" Value="#225A83" />
                                 </DataTrigger>
                             </ImageButton.Triggers>
                         </ImageButton>
                     </VerticalStackLayout>
                 </Border>
             </Grid>
-            <VerticalStackLayout Spacing="8" Margin="8,0">
-                <Label Text="{Binding Strings[Eyebrow]}" TextColor="#A34A32"
-                       FontSize="11" CharacterSpacing="2" FontAttributes="Bold" />
+            <VerticalStackLayout Spacing="5" Margin="8,0">
                 <Label Text="{Binding Strings[Heading]}" FontFamily="OpenSansSemibold"
-                       FontSize="32" LineHeight="1.05" SemanticProperties.HeadingLevel="Level1" />
-                <Label Text="{Binding Strings[Subtitle]}" TextColor="#607063" FontSize="14" />
+                       FontSize="27" LineHeight="1.1" TextColor="#203754" SemanticProperties.HeadingLevel="Level1" />
             </VerticalStackLayout>
 
             <CarouselView x:Name="FoodCarousel" ItemsSource="{Binding Dishes}" Loop="True"
-                          IndicatorView="FoodIndicator" HeightRequest="480"
+                          IndicatorView="FoodIndicator" HeightRequest="510"
                           PeekAreaInsets="12,0" PositionChanged="OnPositionChanged"
                           HorizontalScrollBarVisibility="Never" IsBounceEnabled="False">
                 <CarouselView.ItemsLayout>
@@ -119,15 +105,15 @@
                 </CarouselView.ItemsLayout>
                 <CarouselView.ItemTemplate>
                     <DataTemplate x:DataType="models:Dish">
-                        <Border Margin="0,6,0,12" Stroke="#E1DFD2" StrokeThickness="1"
-                                StrokeShape="RoundRectangle 24" BackgroundColor="#FFFDF8">
+                        <Border Margin="0,6,0,12" Stroke="#F4CE70" StrokeThickness="2"
+                                StrokeShape="RoundRectangle 24" BackgroundColor="#FFFFFF">
                             <Border.Shadow>
-                                <Shadow Brush="#294D3C" Offset="0,5" Radius="12" Opacity="0.12" />
+                                <Shadow Brush="#225A83" Offset="0,5" Radius="12" Opacity="0.12" />
                             </Border.Shadow>
                             <Border.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnDishTapped" CommandParameter="{Binding .}" />
                             </Border.GestureRecognizers>
-                            <Grid RowDefinitions="230,*">
+                            <Grid RowDefinitions="220,*">
                                 <Grid>
                                     <Image Source="{Binding Image}" Aspect="AspectFill"
                                            SemanticProperties.Description="{Binding Title}" />
@@ -141,21 +127,19 @@
                                     </BoxView>
                                     <Border HorizontalOptions="Start" VerticalOptions="End"
                                             Margin="18" Padding="12,6" StrokeThickness="0"
-                                            BackgroundColor="#F8F3E9" StrokeShape="RoundRectangle 12">
-                                        <Label Text="{Binding Category}" FontSize="11"
-                                               FontAttributes="Bold" TextColor="#37563F" />
+                                            BackgroundColor="#FFF1BE" StrokeShape="RoundRectangle 12">
+                                        <Label Text="{Binding Category}" FontSize="13"
+                                               FontAttributes="Bold" TextColor="#75440E" />
                                     </Border>
                                 </Grid>
-                                <VerticalStackLayout Grid.Row="1" Padding="20,16" Spacing="9">
-                                    <Label Text="{Binding Region}" FontSize="10" CharacterSpacing="2"
-                                           TextColor="#A34A32" FontAttributes="Bold" />
+                                <VerticalStackLayout Grid.Row="1" Padding="20,18" Spacing="12">
                                     <Label Text="{Binding Title}" FontFamily="OpenSansSemibold"
-                                           FontSize="23" TextColor="#273B30" MaxLines="2" />
-                                    <Label Text="{Binding Description}" FontSize="13"
-                                           TextColor="#607063" MaxLines="2" />
+                                           FontSize="25" LineHeight="1.1" TextColor="#203754" LineBreakMode="WordWrap" />
+                                    <Label Text="{Binding Description}" FontSize="16" LineHeight="1.15"
+                                           TextColor="#354A63" LineBreakMode="WordWrap" />
                                     <Button Text="{Binding DetailsLabel}" Clicked="OnDetailsClicked"
-                                            BackgroundColor="#294D3C" TextColor="White"
-                                            FontFamily="OpenSansSemibold" FontSize="13"
+                                            BackgroundColor="#C9362E" TextColor="White"
+                                            FontFamily="OpenSansSemibold" FontSize="16" MinimumHeightRequest="48"
                                             CornerRadius="14" Margin="0,4,0,0" />
                                 </VerticalStackLayout>
                             </Grid>
@@ -164,33 +148,21 @@
                 </CarouselView.ItemTemplate>
             </CarouselView>
 
-            <Grid ColumnDefinitions="Auto,*,Auto" Margin="12,0" ColumnSpacing="12">
-                <Button Text="‹" Style="{StaticResource ArrowButton}" Clicked="OnPreviousClicked"
-                        SemanticProperties.Description="{Binding Strings[Previous]}" />
-                <VerticalStackLayout Grid.Column="1" Spacing="7" VerticalOptions="Center">
-                    <IndicatorView x:Name="FoodIndicator" IndicatorColor="#C5CCBB"
-                                   SelectedIndicatorColor="#294D3C" IndicatorSize="9"
-                                   IndicatorsShape="Circle" HorizontalOptions="Center" />
-                    <Label Text="{Binding Counter}" FontSize="11" TextColor="#607063"
-                           HorizontalTextAlignment="Center" />
-                </VerticalStackLayout>
-                <Button Grid.Column="2" Text="›" Style="{StaticResource ArrowButton}" Clicked="OnNextClicked"
-                        SemanticProperties.Description="{Binding Strings[Next]}" />
-            </Grid>
-            <Border Stroke="#D5DCCB" StrokeShape="RoundRectangle 18"
-                    Padding="16,10" BackgroundColor="#EDF0E3" Margin="8,0">
+            <IndicatorView x:Name="FoodIndicator" IndicatorColor="#E9D7A7"
+                           SelectedIndicatorColor="#C9362E" IndicatorSize="10"
+                           IndicatorsShape="Circle" HorizontalOptions="Center" Margin="0,2" />
+            <Border Stroke="#B9DFED" StrokeShape="RoundRectangle 18"
+                    Padding="16,10" BackgroundColor="#E4F4FF" Margin="8,0">
                 <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
                     <VerticalStackLayout VerticalOptions="Center" Spacing="3">
-                        <Label Text="{Binding PlaybackStatus}" FontSize="12" FontAttributes="Bold" />
-                        <Label Text="{Binding Strings[TapHint]}" FontSize="11" TextColor="#607063" />
+                        <Label Text="{Binding PlaybackStatus}" FontSize="15" FontAttributes="Bold" />
+                        <Label Text="{Binding Strings[TapHint]}" FontSize="14" LineHeight="1.15" TextColor="#354A63" />
                     </VerticalStackLayout>
                     <Button Grid.Column="1" Text="{Binding PlaybackButton}" Clicked="OnPlaybackClicked"
-                            BackgroundColor="#FFFFFF" TextColor="#294D3C" FontSize="12"
-                            BorderWidth="1" BorderColor="#D5DCCB" CornerRadius="12" />
+                            BackgroundColor="#FFFFFF" TextColor="#203754" FontSize="15" FontFamily="OpenSansSemibold"
+                            BorderWidth="1" BorderColor="#B9DFED" CornerRadius="12" />
                 </Grid>
             </Border>
-            <Label Text="{Binding Strings[Footer]}" FontSize="11" TextColor="#687566"
-                   HorizontalTextAlignment="Center" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

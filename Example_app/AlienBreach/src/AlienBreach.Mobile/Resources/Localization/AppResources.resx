@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <data name="CommandDeck" xml:space="preserve"><value>Command deck</value></data>
+  <data name="OrbitalDefense" xml:space="preserve"><value>ORBITAL DEFENSE</value></data>
+  <data name="Play" xml:space="preserve"><value>PLAY  →</value></data>
+  <data name="RecordsButton" xml:space="preserve"><value>RECORDS  →</value></data>
+  <data name="HistoryButton" xml:space="preserve"><value>MISSION LOG  →</value></data>
+  <data name="Command" xml:space="preserve"><value>COMMAND</value></data>
+  <data name="SettingsButton" xml:space="preserve"><value>SETTINGS  →</value></data>
+  <data name="Settings" xml:space="preserve"><value>Settings</value></data>
+  <data name="Language" xml:space="preserve"><value>Language</value></data>
+  <data name="GameSpeed" xml:space="preserve"><value>Game speed</value></data>
+  <data name="SettingsHint" xml:space="preserve"><value>Changes are saved automatically on this device.</value></data>
+  <data name="SavingSettings" xml:space="preserve"><value>Saving settings…</value></data>
+  <data name="SettingsSaved" xml:space="preserve"><value>Settings saved.</value></data>
+  <data name="SettingsSaveFailed" xml:space="preserve"><value>Could not save settings. Try again; previous settings are still active.</value></data>
+  <data name="Starting" xml:space="preserve"><value>Loading settings…</value></data>
+  <data name="StartupFailed" xml:space="preserve"><value>Could not load saved settings.</value></data>
+  <data name="Retry" xml:space="preserve"><value>Retry</value></data>
+  <data name="BackDescription" xml:space="preserve"><value>Back to the previous menu</value></data>
+  <data name="SelectSector" xml:space="preserve"><value>Select sector</value></data>
+  <data name="Select" xml:space="preserve"><value>SELECT  →</value></data>
+  <data name="Deploy" xml:space="preserve"><value>DEPLOY  →</value></data>
+  <data name="Supplies" xml:space="preserve"><value>SUPPLIES</value></data>
+  <data name="BestWave" xml:space="preserve"><value>BEST WAVE</value></data>
+  <data name="Runs" xml:space="preserve"><value>RUNS</value></data>
+  <data name="BestKills" xml:space="preserve"><value>BEST KILLS</value></data>
+  <data name="Records" xml:space="preserve"><value>Records</value></data>
+  <data name="AliensDown" xml:space="preserve"><value>ALIENS DOWN</value></data>
+  <data name="Deployments" xml:space="preserve"><value>DEPLOYMENTS</value></data>
+  <data name="MissionLog" xml:space="preserve"><value>Mission log</value></data>
+  <data name="Loading" xml:space="preserve"><value>LOADING…</value></data>
+  <data name="Previous" xml:space="preserve"><value>‹ PREVIOUS</value></data>
+  <data name="Next" xml:space="preserve"><value>NEXT ›</value></data>
+  <data name="Kills" xml:space="preserve"><value>KILLS</value></data>
+  <data name="Credits" xml:space="preserve"><value>CREDITS</value></data>
+  <data name="Time" xml:space="preserve"><value>TIME</value></data>
+  <data name="LogUnavailable" xml:space="preserve"><value>LOG UNAVAILABLE</value></data>
+  <data name="NoMissions" xml:space="preserve"><value>NO MISSIONS YET</value></data>
+  <data name="LoadSectorFailed" xml:space="preserve"><value>Could not load sector records.</value></data>
+  <data name="LoadRecordsFailed" xml:space="preserve"><value>Could not read records.</value></data>
+  <data name="LoadHistoryFailed" xml:space="preserve"><value>Could not read mission history.</value></data>
+  <data name="WaveFormat" xml:space="preserve"><value>WAVE {0:00}</value></data>
+  <data name="WaveHud" xml:space="preserve"><value>WAVE {0:00} / ∞</value></data>
+  <data name="HealthHud" xml:space="preserve"><value>HP {0}/{1}</value></data>
+  <data name="Inbound" xml:space="preserve"><value>{0} INBOUND</value></data>
+  <data name="NextWave" xml:space="preserve"><value>▶ WAVE {0:00}</value></data>
+  <data name="Level" xml:space="preserve"><value>LV {0}</value></data>
+  <data name="Max" xml:space="preserve"><value>MAX</value></data>
+  <data name="Sell" xml:space="preserve"><value>SELL</value></data>
+  <data name="SellFormat" xml:space="preserve"><value>SELL ${0}</value></data>
+  <data name="SavingRecords" xml:space="preserve"><value>Saving defense records…</value></data>
+  <data name="ReturnToCommand" xml:space="preserve"><value>RETURN TO COMMAND  →</value></data>
+  <data name="RetrySave" xml:space="preserve"><value>Retry save</value></data>
+  <data name="ArenaDescription" xml:space="preserve"><value>Full-screen defense map. Select a turret icon, then tap open floor to place it.</value></data>
+  <data name="PauseMission" xml:space="preserve"><value>Pause mission</value></data>
+  <data name="DeselectTurret" xml:space="preserve"><value>Deselect turret</value></data>
+  <data name="Resume" xml:space="preserve"><value>RESUME DEFENSE</value></data>
+  <data name="Retreat" xml:space="preserve"><value>End mission &amp; bank credits</value></data>
+  <data name="Paused" xml:space="preserve"><value>DEFENSE PAUSED</value></data>
+  <data name="Withdrawn" xml:space="preserve"><value>DEFENSE WITHDRAWN</value></data>
+  <data name="OverrunTitle" xml:space="preserve"><value>BASE OVERRUN</value></data>
+  <data name="ResultDetails" xml:space="preserve"><value>{0}
+{1} waves cleared · {2} aliens down
++{3} credits</value></data>
+  <data name="RecordsSaved" xml:space="preserve"><value>Mission logged. Credits and sector records saved.</value></data>
+  <data name="RecordsSaveFailed" xml:space="preserve"><value>Could not save. Keep this screen open and retry to preserve your earnings.</value></data>
+  <data name="DefenseGrid" xml:space="preserve"><value>{0} / DEFENSE GRID</value></data>
+  <data name="TurretDescription" xml:space="preserve"><value>{0}, {1} supplies</value></data>
+  <data name="Map_outpost-07" xml:space="preserve"><value>Outpost 07</value></data>
+  <data name="Map_reactor-ring" xml:space="preserve"><value>Reactor Ring</value></data>
+  <data name="Map_cryo-crossing" xml:space="preserve"><value>Cryo Crossing</value></data>
+  <data name="Map_legacy-survival" xml:space="preserve"><value>Legacy survival</value></data>
+  <data name="Description_outpost-07" xml:space="preserve"><value>A winding cargo lane. Overlapping bends reward careful placement.</value></data>
+  <data name="Description_reactor-ring" xml:space="preserve"><value>A long spiral into the reactor core. Defend the inner chamber.</value></data>
+  <data name="Description_cryo-crossing" xml:space="preserve"><value>A short diagonal ice passage. Slows and long sightlines matter.</value></data>
+  <data name="Difficulty_STANDARD" xml:space="preserve"><value>STANDARD</value></data>
+  <data name="Difficulty_FORGIVING" xml:space="preserve"><value>FORGIVING</value></data>
+  <data name="Difficulty_CHALLENGING" xml:space="preserve"><value>CHALLENGING</value></data>
+  <data name="Turret_Pulse" xml:space="preserve"><value>Pulse turret</value></data>
+  <data name="Turret_Repeater" xml:space="preserve"><value>Rapid repeater</value></data>
+  <data name="Turret_Cannon" xml:space="preserve"><value>Plasma cannon</value></data>
+  <data name="Turret_Cryo" xml:space="preserve"><value>Cryo emitter</value></data>
+  <data name="Turret_Railgun" xml:space="preserve"><value>Railgun</value></data>
+  <data name="Outcome_Overrun" xml:space="preserve"><value>OVERRUN</value></data>
+  <data name="Outcome_Retreated" xml:space="preserve"><value>RETREATED</value></data>
+  <data name="Outcome_Victory" xml:space="preserve"><value>VICTORY</value></data>
+  <data name="Outcome_Extracted" xml:space="preserve"><value>EXTRACTED</value></data>
+  <data name="Outcome_Unknown" xml:space="preserve"><value>UNKNOWN</value></data>
+  <data name="ResumeToBuild" xml:space="preserve"><value>Resume the mission to build.</value></data>
+  <data name="NeedSupplies" xml:space="preserve"><value>Need ${0} more supplies.</value></data>
+  <data name="InvalidPlacement" xml:space="preserve"><value>Build off the route, inside the map, and clear of other turrets.</value></data>
+  <data name="SelectActiveTurret" xml:space="preserve"><value>Select an active turret while the mission is open.</value></data>
+  <data name="TurretMaxLevel" xml:space="preserve"><value>Turret is at maximum level.</value></data>
+  <data name="SoundEffects" xml:space="preserve"><value>Sound effects</value></data>
+</root>
+

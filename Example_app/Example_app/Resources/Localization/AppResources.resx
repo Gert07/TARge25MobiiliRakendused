@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="Settings" xml:space="preserve"><value>Settings</value></data>
+  <data name="Language" xml:space="preserve"><value>Language</value></data>
+  <data name="Theme" xml:space="preserve"><value>Theme</value></data>
+  <data name="LightTheme" xml:space="preserve"><value>Light</value></data>
+  <data name="DarkTheme" xml:space="preserve"><value>Dark</value></data>
+  <data name="Opponent" xml:space="preserve"><value>Opponent</value></data>
+  <data name="TwoPlayers" xml:space="preserve"><value>2 players</value></data>
+  <data name="VsBot" xml:space="preserve"><value>Play against bot</value></data>
+  <data name="SettingsSaved" xml:space="preserve"><value>Changes are saved automatically.</value></data>
+  <data name="SaveFailed" xml:space="preserve"><value>Could not save. Please try again.</value></data>
+  <data name="Error" xml:space="preserve"><value>Error</value></data>
+  <data name="Back" xml:space="preserve"><value>Back</value></data>
+  <data name="BackToGame" xml:space="preserve"><value>Back to game</value></data>
+  <data name="GameTitle" xml:space="preserve"><value>Tic-tac-toe</value></data>
+  <data name="Rules" xml:space="preserve"><value>Rules</value></data>
+  <data name="Statistics" xml:space="preserve"><value>Statistics</value></data>
+  <data name="NewGame" xml:space="preserve"><value>New game</value></data>
+  <data name="WhoStarts" xml:space="preserve"><value>Who starts?</value></data>
+  <data name="PlayerTurn" xml:space="preserve"><value>Player {0}'s turn</value></data>
+  <data name="BotThinking" xml:space="preserve"><value>Bot is thinking…</value></data>
+  <data name="GameOver" xml:space="preserve"><value>Game over!</value></data>
+  <data name="WinnerMessage" xml:space="preserve"><value>{0} won! Play again?</value></data>
+  <data name="DrawMessage" xml:space="preserve"><value>It's a draw! Play again?</value></data>
+  <data name="Yes" xml:space="preserve"><value>Yes</value></data>
+  <data name="No" xml:space="preserve"><value>No</value></data>
+  <data name="OK" xml:space="preserve"><value>OK</value></data>
+  <data name="StarterMessage" xml:space="preserve"><value>Player {0} was drawn to start.</value></data>
+  <data name="RulesTitle" xml:space="preserve"><value>Game rules</value></data>
+  <data name="Rule1" xml:space="preserve"><value>1. The game is played on a 3 × 3 board.</value></data>
+  <data name="Rule2" xml:space="preserve"><value>2. Players take turns placing their symbol (X or O) on the board.</value></data>
+  <data name="Rule3" xml:space="preserve"><value>3. The first player to fill a row, column or diagonal wins.</value></data>
+  <data name="Rule4" xml:space="preserve"><value>4. If the board is full and nobody has won, the game ends in a draw.</value></data>
+  <data name="StatsTitle" xml:space="preserve"><value>Game statistics</value></data>
+  <data name="XWins" xml:space="preserve"><value>X wins: {0}</value></data>
+  <data name="OWins" xml:space="preserve"><value>O wins: {0}</value></data>
+  <data name="Draws" xml:space="preserve"><value>Draws: {0}</value></data>
+  <data name="ResetStats" xml:space="preserve"><value>Clear statistics</value></data>
+  <data name="Home" xml:space="preserve"><value>Home</value></data>
+  <data name="MenuText" xml:space="preserve"><value>Text</value></data>
+  <data name="MenuFigure" xml:space="preserve"><value>Shapes</value></data>
+  <data name="MenuTraffic" xml:space="preserve"><value>Traffic light</value></data>
+  <data name="MenuTime" xml:space="preserve"><value>Date and time</value></data>
+  <data name="MenuStepper" xml:space="preserve"><value>Stepper</value></data>
+  <data name="MenuTree" xml:space="preserve"><value>Tree</value></data>
+  <data name="MenuPopup" xml:space="preserve"><value>Popup</value></data>
+  <data name="MenuGrid" xml:space="preserve"><value>Grid</value></data>
+  <data name="MenuPhones" xml:space="preserve"><value>Phones</value></data>
+  <data name="MenuCarousel" xml:space="preserve"><value>Carousel gallery</value></data>
+  <data name="ResetWelcome" xml:space="preserve"><value>Show welcome guide again</value></data>
+  <data name="Welcome" xml:space="preserve"><value>Welcome!</value></data>
+  <data name="WelcomeQuestion" xml:space="preserve"><value>Would you like a short guide?</value></data>
+  <data name="GuideTitle" xml:space="preserve"><value>Quick guide</value></data>
+  <data name="GuideText" xml:space="preserve"><value>Choose a topic from the menu. Open Settings to choose your language, theme and game opponent.</value></data>
+  <data name="WelcomeReset" xml:space="preserve"><value>The welcome guide will appear next time you open the home page.</value></data>
+</root>
+

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../src/AlienBreach.Mobile/Services/L.cs" Link="Mobile/Services/L.cs" />
+    <Compile Include="../../src/AlienBreach.Mobile/Services/SettingsService.cs" Link="Mobile/Services/SettingsService.cs" />
+    <Compile Include="../../src/AlienBreach.Mobile/Services/IAudioPlayback.cs" Link="Mobile/Services/IAudioPlayback.cs" />
+    <Compile Include="../../src/AlienBreach.Mobile/Services/GameAudioService.cs" Link="Mobile/Services/GameAudioService.cs" />
+    <Compile Include="../../src/AlienBreach.Mobile/Services/SoundGenerator.cs" Link="Mobile/Services/SoundGenerator.cs" />
+    <Compile Include="../../src/AlienBreach.Mobile/Models/LanguageOption.cs" Link="Mobile/Models/LanguageOption.cs" />
+    <Compile Include="../../src/AlienBreach.Mobile/ViewModels/SettingsViewModel.cs" Link="Mobile/ViewModels/SettingsViewModel.cs" />
+    <EmbeddedResource Include="../../src/AlienBreach.Mobile/Resources/Localization/*.resx">
+      <ManifestResourceName>AlienBreach.Resources.Localization.%(Filename)</ManifestResourceName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="4.0.0" PrivateAssets="all" />
+    <ProjectReference Include="../../src/AlienBreach.Core/AlienBreach.Core.csproj" />
+    <Using Include="Xunit" />
+  </ItemGroup>
+</Project>

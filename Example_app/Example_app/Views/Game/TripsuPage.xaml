@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:services="clr-namespace:Example_app.Services"
+             x:Class="Example_app.Views.Game.TripsuPage"
+             Title="{services:Translate GameTitle}">
+    <ScrollView>
+        <VerticalStackLayout x:Name="GameControls" Padding="20" Spacing="15" MaximumWidthRequest="600">
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="10" RowSpacing="10">
+                <Button Text="{services:Translate Rules}" Clicked="OnRulesClicked" />
+                <Button Grid.Column="1" Text="{services:Translate Statistics}" Clicked="OnStatsClicked" />
+                <Button Grid.Row="1" Text="{services:Translate Theme}" Clicked="OnToggleThemeClicked" />
+                <Button Grid.Row="1" Grid.Column="1" Text="{services:Translate Settings}" Clicked="OnSettingsClicked" />
+            </Grid>
+            <Label Text="{services:Translate Opponent}" />
+            <Picker x:Name="ModePicker" Title="{services:Translate Opponent}" SelectedIndexChanged="OnModeChanged" />
+            <Label x:Name="StatusLabel" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                <Button Text="{services:Translate NewGame}" Clicked="OnNewGameClicked" BackgroundColor="#107C41" TextColor="White" />
+                <Button Grid.Column="1" Text="{services:Translate WhoStarts}" Clicked="OnWhoStartsClicked" BackgroundColor="#0078D4" TextColor="White" />
+            </Grid>
+            <Border Stroke="Gray" StrokeShape="RoundRectangle 10" Padding="5" HeightRequest="310" MaximumWidthRequest="360">
+                <Grid x:Name="BoardGrid" />
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:services="clr-namespace:Example_app.Services"
+             x:Class="Example_app.Views.Game.RulesPage"
+             Title="{services:Translate Rules}">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15" MaximumWidthRequest="600">
+            <Label Text="{services:Translate RulesTitle}" FontSize="24" FontAttributes="Bold" />
+            <Label Text="{services:Translate Rule1}" FontSize="16" />
+            <Label Text="{services:Translate Rule2}" FontSize="16" />
+            <Label Text="{services:Translate Rule3}" FontSize="16" />
+            <Label Text="{services:Translate Rule4}" FontSize="16" />
+            <Button Text="{services:Translate BackToGame}" Clicked="OnBackClicked" Margin="0,20,0,0" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+

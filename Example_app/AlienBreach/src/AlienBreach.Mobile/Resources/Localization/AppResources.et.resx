@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <data name="CommandDeck" xml:space="preserve"><value>Juhtimiskeskus</value></data>
+  <data name="OrbitalDefense" xml:space="preserve"><value>ORBITAALKAITSE</value></data>
+  <data name="Play" xml:space="preserve"><value>MÄNGI  →</value></data>
+  <data name="RecordsButton" xml:space="preserve"><value>REKORDID  →</value></data>
+  <data name="HistoryButton" xml:space="preserve"><value>MISSIOONILOGI  →</value></data>
+  <data name="Command" xml:space="preserve"><value>JUHTIMINE</value></data>
+  <data name="SettingsButton" xml:space="preserve"><value>SÄTTED  →</value></data>
+  <data name="Settings" xml:space="preserve"><value>Sätted</value></data>
+  <data name="Language" xml:space="preserve"><value>Keel</value></data>
+  <data name="GameSpeed" xml:space="preserve"><value>Mängukiirus</value></data>
+  <data name="SettingsHint" xml:space="preserve"><value>Muudatused salvestatakse selles seadmes automaatselt.</value></data>
+  <data name="SavingSettings" xml:space="preserve"><value>Salvestan sätteid…</value></data>
+  <data name="SettingsSaved" xml:space="preserve"><value>Sätted salvestatud.</value></data>
+  <data name="SettingsSaveFailed" xml:space="preserve"><value>Sätteid ei saanud salvestada. Proovi uuesti; kehtivad eelmised sätted.</value></data>
+  <data name="Starting" xml:space="preserve"><value>Laadin sätteid…</value></data>
+  <data name="StartupFailed" xml:space="preserve"><value>Salvestatud sätete laadimine ebaõnnestus.</value></data>
+  <data name="Retry" xml:space="preserve"><value>Proovi uuesti</value></data>
+  <data name="BackDescription" xml:space="preserve"><value>Tagasi eelmisesse menüüsse</value></data>
+  <data name="SelectSector" xml:space="preserve"><value>Vali sektor</value></data>
+  <data name="Select" xml:space="preserve"><value>VALI  →</value></data>
+  <data name="Deploy" xml:space="preserve"><value>ALUSTA  →</value></data>
+  <data name="Supplies" xml:space="preserve"><value>VARUD</value></data>
+  <data name="BestWave" xml:space="preserve"><value>PARIM LAINE</value></data>
+  <data name="Runs" xml:space="preserve"><value>MÄNGE</value></data>
+  <data name="BestKills" xml:space="preserve"><value>PARIM HÄVITUSTE ARV</value></data>
+  <data name="Records" xml:space="preserve"><value>Rekordid</value></data>
+  <data name="AliensDown" xml:space="preserve"><value>HÄVITATUD TULNUKAID</value></data>
+  <data name="Deployments" xml:space="preserve"><value>MISSIOONE</value></data>
+  <data name="MissionLog" xml:space="preserve"><value>Missioonilogi</value></data>
+  <data name="Loading" xml:space="preserve"><value>LAADIMINE…</value></data>
+  <data name="Previous" xml:space="preserve"><value>‹ EELMINE</value></data>
+  <data name="Next" xml:space="preserve"><value>JÄRGMINE ›</value></data>
+  <data name="Kills" xml:space="preserve"><value>HÄVITUSI</value></data>
+  <data name="Credits" xml:space="preserve"><value>KREDIITI</value></data>
+  <data name="Time" xml:space="preserve"><value>AEG</value></data>
+  <data name="LogUnavailable" xml:space="preserve"><value>LOGI POLE SAADAVAL</value></data>
+  <data name="NoMissions" xml:space="preserve"><value>MISSIOONE VEEL POLE</value></data>
+  <data name="LoadSectorFailed" xml:space="preserve"><value>Sektori rekordite laadimine ebaõnnestus.</value></data>
+  <data name="LoadRecordsFailed" xml:space="preserve"><value>Rekordite laadimine ebaõnnestus.</value></data>
+  <data name="LoadHistoryFailed" xml:space="preserve"><value>Missioonide ajaloo laadimine ebaõnnestus.</value></data>
+  <data name="WaveFormat" xml:space="preserve"><value>LAINE {0:00}</value></data>
+  <data name="WaveHud" xml:space="preserve"><value>LAINE {0:00} / ∞</value></data>
+  <data name="HealthHud" xml:space="preserve"><value>ELU {0}/{1}</value></data>
+  <data name="Inbound" xml:space="preserve"><value>{0} LÄHENEB</value></data>
+  <data name="NextWave" xml:space="preserve"><value>▶ LAINE {0:00}</value></data>
+  <data name="Level" xml:space="preserve"><value>TASE {0}</value></data>
+  <data name="Max" xml:space="preserve"><value>MAKS</value></data>
+  <data name="Sell" xml:space="preserve"><value>MÜÜ</value></data>
+  <data name="SellFormat" xml:space="preserve"><value>MÜÜ ${0}</value></data>
+  <data name="SavingRecords" xml:space="preserve"><value>Salvestan kaitsetulemusi…</value></data>
+  <data name="ReturnToCommand" xml:space="preserve"><value>TAGASI MENÜÜSSE  →</value></data>
+  <data name="RetrySave" xml:space="preserve"><value>Proovi uuesti salvestada</value></data>
+  <data name="ArenaDescription" xml:space="preserve"><value>Täisekraani kaitsekaart. Vali torni ikoon ja puuduta ehitamiseks vaba ala.</value></data>
+  <data name="PauseMission" xml:space="preserve"><value>Peata missioon</value></data>
+  <data name="DeselectTurret" xml:space="preserve"><value>Tühista torni valik</value></data>
+  <data name="Resume" xml:space="preserve"><value>JÄTKA KAITSET</value></data>
+  <data name="Retreat" xml:space="preserve"><value>Lõpeta missioon ja salvesta krediit</value></data>
+  <data name="Paused" xml:space="preserve"><value>KAITSE PEATATUD</value></data>
+  <data name="Withdrawn" xml:space="preserve"><value>KAITSE LÕPETATUD</value></data>
+  <data name="OverrunTitle" xml:space="preserve"><value>BAAS LANGES</value></data>
+  <data name="ResultDetails" xml:space="preserve"><value>{0}
+{1} lainet läbitud · {2} tulnukat hävitatud
++{3} krediiti</value></data>
+  <data name="RecordsSaved" xml:space="preserve"><value>Missioon logitud. Krediit ja sektori rekordid salvestatud.</value></data>
+  <data name="RecordsSaveFailed" xml:space="preserve"><value>Salvestamine ebaõnnestus. Hoia see vaade avatuna ja proovi teenitu säilitamiseks uuesti.</value></data>
+  <data name="DefenseGrid" xml:space="preserve"><value>{0} / KAITSEVÕRK</value></data>
+  <data name="TurretDescription" xml:space="preserve"><value>{0}, {1} varuühikut</value></data>
+  <data name="Map_outpost-07" xml:space="preserve"><value>Eelpost 07</value></data>
+  <data name="Map_reactor-ring" xml:space="preserve"><value>Reaktoriring</value></data>
+  <data name="Map_cryo-crossing" xml:space="preserve"><value>Jääületus</value></data>
+  <data name="Map_legacy-survival" xml:space="preserve"><value>Varasem ellujäämismäng</value></data>
+  <data name="Description_outpost-07" xml:space="preserve"><value>Käänuline kaubatee. Kattuvad kurvid soosivad tornide läbimõeldud paigutust.</value></data>
+  <data name="Description_reactor-ring" xml:space="preserve"><value>Pikk spiraal reaktori südamesse. Kaitse sisemist kambrit.</value></data>
+  <data name="Description_cryo-crossing" xml:space="preserve"><value>Lühike diagonaalne jääkoridor. Olulised on aeglustamine ja pikk laskeulatus.</value></data>
+  <data name="Difficulty_STANDARD" xml:space="preserve"><value>TAVALINE</value></data>
+  <data name="Difficulty_FORGIVING" xml:space="preserve"><value>KERGE</value></data>
+  <data name="Difficulty_CHALLENGING" xml:space="preserve"><value>RASKE</value></data>
+  <data name="Turret_Pulse" xml:space="preserve"><value>Impulsitorn</value></data>
+  <data name="Turret_Repeater" xml:space="preserve"><value>Kiirtorn</value></data>
+  <data name="Turret_Cannon" xml:space="preserve"><value>Plasmakahur</value></data>
+  <data name="Turret_Cryo" xml:space="preserve"><value>Külmakiirgur</value></data>
+  <data name="Turret_Railgun" xml:space="preserve"><value>Rööbaskahur</value></data>
+  <data name="Outcome_Overrun" xml:space="preserve"><value>BAAS LANGES</value></data>
+  <data name="Outcome_Retreated" xml:space="preserve"><value>TAGANETUD</value></data>
+  <data name="Outcome_Victory" xml:space="preserve"><value>VÕIT</value></data>
+  <data name="Outcome_Extracted" xml:space="preserve"><value>EVAKUEERITUD</value></data>
+  <data name="Outcome_Unknown" xml:space="preserve"><value>TEADMATA</value></data>
+  <data name="ResumeToBuild" xml:space="preserve"><value>Ehitamiseks jätka missiooni.</value></data>
+  <data name="NeedSupplies" xml:space="preserve"><value>Vajad veel {0} varuühikut.</value></data>
+  <data name="InvalidPlacement" xml:space="preserve"><value>Ehita rajast eemale, kaardi sisse ja teistest tornidest vabale alale.</value></data>
+  <data name="SelectActiveTurret" xml:space="preserve"><value>Vali käimasolevas missioonis aktiivne torn.</value></data>
+  <data name="TurretMaxLevel" xml:space="preserve"><value>Torn on maksimaalsel tasemel.</value></data>
+  <data name="SoundEffects" xml:space="preserve"><value>Heliefektid</value></data>
+</root>
+

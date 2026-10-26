@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="Settings" xml:space="preserve"><value>Sätted</value></data>
+  <data name="Language" xml:space="preserve"><value>Keel</value></data>
+  <data name="Theme" xml:space="preserve"><value>Teema</value></data>
+  <data name="LightTheme" xml:space="preserve"><value>Hele</value></data>
+  <data name="DarkTheme" xml:space="preserve"><value>Tume</value></data>
+  <data name="Opponent" xml:space="preserve"><value>Vastane</value></data>
+  <data name="TwoPlayers" xml:space="preserve"><value>2 mängijat</value></data>
+  <data name="VsBot" xml:space="preserve"><value>Mäng botiga</value></data>
+  <data name="SettingsSaved" xml:space="preserve"><value>Muudatused salvestatakse automaatselt.</value></data>
+  <data name="SaveFailed" xml:space="preserve"><value>Salvestamine ebaõnnestus. Palun proovi uuesti.</value></data>
+  <data name="Error" xml:space="preserve"><value>Viga</value></data>
+  <data name="Back" xml:space="preserve"><value>Tagasi</value></data>
+  <data name="BackToGame" xml:space="preserve"><value>Tagasi mängima</value></data>
+  <data name="GameTitle" xml:space="preserve"><value>Trips-traps-trull</value></data>
+  <data name="Rules" xml:space="preserve"><value>Reeglid</value></data>
+  <data name="Statistics" xml:space="preserve"><value>Statistika</value></data>
+  <data name="NewGame" xml:space="preserve"><value>Uus mäng</value></data>
+  <data name="WhoStarts" xml:space="preserve"><value>Kes alustab?</value></data>
+  <data name="PlayerTurn" xml:space="preserve"><value>Mängija {0} kord</value></data>
+  <data name="BotThinking" xml:space="preserve"><value>Bot mõtleb…</value></data>
+  <data name="GameOver" xml:space="preserve"><value>Mäng läbi!</value></data>
+  <data name="WinnerMessage" xml:space="preserve"><value>{0} võitis! Kas soovid veel mängida?</value></data>
+  <data name="DrawMessage" xml:space="preserve"><value>Tekkis viik! Kas soovid veel mängida?</value></data>
+  <data name="Yes" xml:space="preserve"><value>Jah</value></data>
+  <data name="No" xml:space="preserve"><value>Ei</value></data>
+  <data name="OK" xml:space="preserve"><value>Selge</value></data>
+  <data name="StarterMessage" xml:space="preserve"><value>Loosiga alustab mängija: {0}</value></data>
+  <data name="RulesTitle" xml:space="preserve"><value>Mängureeglid</value></data>
+  <data name="Rule1" xml:space="preserve"><value>1. Mäng toimub 3 × 3 ruudustikul.</value></data>
+  <data name="Rule2" xml:space="preserve"><value>2. Mängijad asetavad kordamööda ruudustikule oma sümboli (X või O).</value></data>
+  <data name="Rule3" xml:space="preserve"><value>3. Võidab see, kes saab esimesena täis terve rea, tulba või diagonaali.</value></data>
+  <data name="Rule4" xml:space="preserve"><value>4. Kui kõik ruudud on täidetud ja keegi pole võitnud, lõpeb mäng viigiga.</value></data>
+  <data name="StatsTitle" xml:space="preserve"><value>Mängude statistika</value></data>
+  <data name="XWins" xml:space="preserve"><value>X võidud: {0}</value></data>
+  <data name="OWins" xml:space="preserve"><value>O võidud: {0}</value></data>
+  <data name="Draws" xml:space="preserve"><value>Viigid: {0}</value></data>
+  <data name="ResetStats" xml:space="preserve"><value>Puhasta statistika</value></data>
+  <data name="Home" xml:space="preserve"><value>Avaleht</value></data>
+  <data name="MenuText" xml:space="preserve"><value>Tekstid</value></data>
+  <data name="MenuFigure" xml:space="preserve"><value>Kujundus</value></data>
+  <data name="MenuTraffic" xml:space="preserve"><value>Valgusfoor</value></data>
+  <data name="MenuTime" xml:space="preserve"><value>Kuupäev ja kellaaeg</value></data>
+  <data name="MenuStepper" xml:space="preserve"><value>Stepper</value></data>
+  <data name="MenuTree" xml:space="preserve"><value>Puu</value></data>
+  <data name="MenuPopup" xml:space="preserve"><value>Hüpikaken</value></data>
+  <data name="MenuGrid" xml:space="preserve"><value>Ruudustik</value></data>
+  <data name="MenuPhones" xml:space="preserve"><value>Telefonid</value></data>
+  <data name="MenuCarousel" xml:space="preserve"><value>Karusselligalerii</value></data>
+  <data name="ResetWelcome" xml:space="preserve"><value>Näita tervitusjuhendit uuesti</value></data>
+  <data name="Welcome" xml:space="preserve"><value>Tere tulemast!</value></data>
+  <data name="WelcomeQuestion" xml:space="preserve"><value>Kas soovid lühikest juhendit?</value></data>
+  <data name="GuideTitle" xml:space="preserve"><value>Lühike juhend</value></data>
+  <data name="GuideText" xml:space="preserve"><value>Vali menüüst sobiv teema. Sätetes saad valida keele, teema ja mängu vastase.</value></data>
+  <data name="WelcomeReset" xml:space="preserve"><value>Tervitusjuhend ilmub järgmisel avalehe avamisel.</value></data>
+</root>
+
